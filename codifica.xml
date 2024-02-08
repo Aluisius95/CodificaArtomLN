@@ -1,1 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+            <titleStmt>
+                <title>Diari di Emanuele Artom (1943-1944)</title>
+                <author>Artom, Emanuele (1915-1944)</author>
+                <respStmt>
+                    <resp>Rivisitati e pubblicati da</resp>
+                    <persName>Schwarz, Guri</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationsStmt>
+                <distributor>Fondazione CDEC</distributor>
+                <availability>
+                    <p>Secondo le regole dell'Istituto e la normativa vigente</p>
+                </availability>
+                <date>2008</date>
+            </publicationsStmt>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+            <textDesc n="diary">
+                <channel mode="w">manoscritto</channel>
+            </textDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Progetto sviluppato per l'esame di Codifica di Testi a.a. 2022-2023</p>
+                <author>Luigi Noto</author>
+            </projectDesc>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="it">
+    </text>
+</TEI>
