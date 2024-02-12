@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?xml-styledheet type="text/xsl" href="stylesheet.xsl"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -29,11 +29,23 @@
                 </availability>
             </publicationsStmt>
 
+            <!-- info sulla provenienza della risorsa -->
+            <sourceDesc>
+                <bibl>
+                    <title level="m">Diari di un partigiano ebreo</title>
+                </bibl>
+            </sourceDesc>
+
             <!-- informazioni sull'edizione della codifica -->
             <editionStmt>
                 <edition>
                     Edizione creata dagli studenti della facoltà di <affiliation>Informatica Umanistica</affiliation> dell'<orgName>Università di <settlement>Pisa</settlement></orgName>
                 </edition>
+                <respStmt>
+                    <resp>
+                        Progetto sviluppato per l'esame di 
+                    </resp>
+                </respStmt>
             </editionStmt>
         </fileDesc>
 
