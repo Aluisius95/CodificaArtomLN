@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-styledheet type="text/xsl" href="stylesheet.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader xml:lang="it">
         <fileDesc>
+            <!-- informazioni sul file da codificare -->
             <titleStmt>
-                <title>Diari di Emanuele Artom (1943-1944)</title>
-                <author>Artom, Emanuele (1915-1944)</author>
-                <respStmt>
-                    <resp>Rivisitati e pubblicati da</resp>
-                    <persName>Schwarz, Guri</persName>
+                <title xml:lang="it" type="main" level="m">Trascrizione digitale dei Diari di Emanuele Artom</title>
+                <respStmt xml:id="editor">
+                    <resp>Codifica Digitale XML a cura di</resp>
+                    <persName>
+                        <forename>Luigi</forename>
+                        <surname>Noto</surname>
+                    </persName>
                 </respStmt>
             </titleStmt>
+
+            <!-- informazioni sulla pubblicazione del testo -->
             <publicationsStmt>
-                <distributor>Fondazione CDEC</distributor>
-                <availability>
-                    <p>Secondo le regole dell'Istituto e la normativa vigente</p>
+                <distributor>
+                    Fondazione
+                    <expan>Centro di Documentazione Ebraica Contemporanea</expan>
+                    <abbr cert="high">CDEC</abbr>
+                </distributor>
+                <availability status="restricted">
+                    <p>Previa autorizzazione del responsabile dell'archivio secondo le regole dell'Istituto e la normativa vigente.</p>
                 </availability>
-                <date>2008</date>
             </publicationsStmt>
+
+            <!-- informazioni sull'edizione della codifica -->
+            <editionStmt>
+                <edition>
+                    Edizione creata dagli studenti della facoltà di <affiliation>Informatica Umanistica</affiliation> dell'<orgName>Università di <settlement>Pisa</settlement></orgName>
+                </edition>
+            </editionStmt>
         </fileDesc>
+
         <profileDesc>
             <langUsage>
                 <language ident="it">Italiano</language>
             </langUsage>
             <textDesc n="diary">
-                <channel mode="w">manoscritto</channel>
+                <channel mode="w">Diari autografi</channel>
             </textDesc>
         </profileDesc>
         <encodingDesc>
