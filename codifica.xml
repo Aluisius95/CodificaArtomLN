@@ -88,6 +88,12 @@
                     </persName>
                 </respStmt>
             </seriesStmt>
+
+            <!-- Note aggiuntive riguardo il testo e il suo contenuto -->
+            <notesStmt>
+                <note>
+                </note>
+            </notesStmt>
         </fileDesc>
 
         <profileDesc>
