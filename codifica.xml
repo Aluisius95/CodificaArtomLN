@@ -10,7 +10,7 @@
             <titleStmt>
                 <title xml:lang="it" type="main" level="m">Trascrizione digitale dei Diari di Emanuele Artom</title>
                 <respStmt xml:id="editor">
-                    <resp>Codifica Digitale XML a cura di</resp>
+                    <resp>Codifica Digitale XML TEI P5 a cura di</resp>
                     <persName>
                         <forename>Luigi</forename>
                         <surname>Noto</surname>
@@ -18,8 +18,33 @@
                 </respStmt>
             </titleStmt>
 
+            <!-- EDITIONSTMT: informazioni sull'edizione del testo -->
+            <editionStmt>
+                <edition>
+                    <title level="m">Diari di un partigiano ebreo</title>
+                    <date from="1940-11" to="1944-02">Da novembre 1940 a febbraio 1944</date>
+                </edition>
+                <author>
+                    <persName>
+                        <forename>Emanuele</forename>
+                        <surname>Artom</surname>
+                    </persName>
+                </author>
+                <respStmt>
+                    <resp>
+                        Pubblicato integralmente nel <date when="2008">2008</date> da 
+                    </resp>
+                    <persName>Guri Schwarz</persName>
+                </respStmt>
+            </editionStmt>
+
+            <!-- EXTENT: informazioni sulla dimensione del lavoro -->
+            <extent>
+                <measure quantity="3" unit="pages">Pagine 34-35-36</measure>
+            </extent>
+
             <!-- PUBLICATIONSTMT: informazioni sulla pubblicazione del testo -->
-            <publicationsStmt>
+            <publicationStmt>
                 <distributor>
                     Fondazione
                     <expan>Centro di Documentazione Ebraica Contemporanea</expan>
@@ -28,46 +53,8 @@
                 <availability status="restricted">
                     <p>Previa autorizzazione del responsabile dell'archivio secondo le regole dell'Istituto e la normativa vigente.</p>
                 </availability>
-            </publicationsStmt>
+            </publicationStmt>
 
-            <!-- SOURCEDESC: info sulla provenienza del testo -->
-            <sourceDesc>
-                <bibl>
-                    <title level="m">Diari di un partigiano ebreo</title>
-                    <author>
-                        <persName>
-                            <forename>Emanuele</forename>
-                            <surname>Artom</surname>
-                        </persName>
-                    </author>
-                    <date from="1940" to="1944">Dal 1940 al 1944</date>
-                </bibl>
-            </sourceDesc>
-
-            <!-- EDITIONSTMT: informazioni sull'edizione del testo -->
-            <editionStmt>
-                <author>
-                    <persName>
-                        <forename>Emanuele</forename>
-                        <surname>Artom</surname>
-                    </persName>
-                </author>
-                <edition>
-                    <title level="m">Diari di un partigiano ebreo</title>
-                    <date from="1940-11" to="1944-02">Da novembre 1940 a febbraio 1944</date>
-                </edition>
-                <respStmt>
-                    <resp>
-                        Pubblicato integralmente nel <date when="2008">2008</date> da <persName>Guri Schwarz</persName>
-                    </resp>
-                </respStmt>
-            </editionStmt>
-
-            <!-- EXTENT: informazioni sulla dimensione del lavoro -->
-            <extent>
-                <measure quantity="3" unit="pages">Pagine 34-35-36</measure>
-            </extent>
-            
             <!-- SERIESSTMT: informazioni riguardo il lavoro di codifica-->
             <seriesStmt>
                 <title level="s" type="desc">
@@ -90,10 +77,24 @@
             </seriesStmt>
 
             <!-- Note aggiuntive riguardo il testo e il suo contenuto -->
-            <notesStmt>
+            <!--<notesStmt>
                 <note>
                 </note>
-            </notesStmt>
+            </notesStmt>-->
+            
+            <!-- SOURCEDESC: info sulla provenienza del testo -->
+            <sourceDesc>
+                <bibl>
+                    <title level="m">Diari di un partigiano ebreo</title>
+                    <author>
+                        <persName>
+                            <forename>Emanuele</forename>
+                            <surname>Artom</surname>
+                        </persName>
+                    </author>
+                    <date from="1940" to="1944">Dal 1940 al 1944</date>
+                </bibl>
+            </sourceDesc>
         </fileDesc>
 
         <profileDesc>
@@ -102,15 +103,40 @@
             </langUsage>
             <textDesc n="diary">
                 <channel mode="w">Diari autografi</channel>
+                <constitution type="frags" />
+                <derivation type="original" />
+                <domain type="education" />
+                <factuality type="fact">Testimonianze durante il fascismo</factuality>
+                <interaction type="partial" passive="world" />
+                <preparedness type="none" />
+                <purpose type="inform" />
             </textDesc>
         </profileDesc>
         <encodingDesc>
             <projectDesc>
                 <p>Progetto sviluppato per l'esame di Codifica di Testi a.a. 2022-2023</p>
-                <author>Luigi Noto</author>
             </projectDesc>
         </encodingDesc>
     </teiHeader>
-    <text xml:lang="it">
-    </text>
+    <!--<text xml:lang="it">
+        <group>
+            <text xml:id="page_34">
+                <body>
+                </body>
+            </text>
+            <text xml:id="page_35">
+                <body>
+                </body>
+            </text>
+            <text xml:id="page_36">
+                <body>
+                </body>
+            </text>
+        </group>
+    </text>-->
 </TEI>
+
+<!--
+    Comando per Xerces
+    java -cp .\Xerces-J-bin.2.12.1\xerces-2_12_1\* dom.Counter -v C:\Users\lnoto\Desktop\CodificaArtomLN\codifica.xml 
+-->
