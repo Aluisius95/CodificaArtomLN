@@ -6,35 +6,30 @@
     <teiHeader xml:lang="it">
         <fileDesc>
 
-            <!-- TITLESTMT: informazioni sul file da codificare -->
+            <!-- TITLESTMT: Titolo del progetto -->
             <titleStmt>
-                <title xml:lang="it" type="main" level="m">Trascrizione digitale dei Diari di Emanuele Artom</title>
-                <respStmt xml:id="editor">
-                    <resp>Codifica Digitale XML TEI P5 a cura di</resp>
-                    <persName>
-                        <forename>Luigi</forename>
-                        <surname>Noto</surname>
-                    </persName>
-                </respStmt>
-            </titleStmt>
-
-            <!-- EDITIONSTMT: informazioni sull'edizione del testo -->
-            <editionStmt>
-                <edition>
-                    <title level="m">Diari di un partigiano ebreo</title>
-                    <date from="1940-11" to="1944-02">Da novembre 1940 a febbraio 1944</date>
-                </edition>
+                <title xml:lang="it" type="main" level="m">Diari di un partigiano ebreo</title>
                 <author>
-                    <persName>
-                        <forename>Emanuele</forename>
-                        <surname>Artom</surname>
+                    <persName xml:id="EA">
+                        Emanuele Artom
                     </persName>
                 </author>
                 <respStmt>
-                    <resp>
-                        Pubblicato integralmente nel <date when="2008">2008</date> da 
-                    </resp>
-                    <persName>Guri Schwarz</persName>
+                    <resp>Codifica Digitale XML TEI P5 a cura di</resp>
+                    <persName xml:id="LN">Luigi Noto</persName>
+                </respStmt>
+            </titleStmt>
+
+            <!-- EDITIONSTMT: Edizione del progetto -->
+            <editionStmt>
+                <edition>
+                    Trascrizione e codifica del diario di
+                    <persName ref="#EA">E. Artom</persName>
+                    <date when="2024-02">febbraio 2024</date>
+                </edition>
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <persName ref="#LN">L. Noto</persName>
                 </respStmt>
             </editionStmt>
 
@@ -43,7 +38,7 @@
                 <measure quantity="3" unit="pages">Pagine 34-35-36</measure>
             </extent>
 
-            <!-- PUBLICATIONSTMT: informazioni sulla pubblicazione del testo -->
+            <!-- PUBLICATIONSTMT: informazioni sulla pubblicazione del documento e del progetto -->
             <publicationStmt>
                 <distributor>
                     Fondazione
@@ -68,32 +63,38 @@
                     <resp>
                         Progetto sviluppato per l'esame di <name>Codifica di Testi</name> tenuto dal professore
                     </resp>
-                    <persName>
-                        <forename>Angelo</forename>
-                        <forename>Mario</forename>
-                        <surname>Del Grosso</surname>
-                    </persName>
+                    <persName xml:id="AMdG">Angelo Mario Del Grosso</persName>
                 </respStmt>
             </seriesStmt>
-
-            <!-- Note aggiuntive riguardo il testo e il suo contenuto -->
-            <!--<notesStmt>
-                <note>
-                </note>
-            </notesStmt>-->
             
-            <!-- SOURCEDESC: info sulla provenienza del testo -->
+            <!-- SOURCEDESC: info sulle fonti del testo -->
             <sourceDesc>
-                <bibl>
-                    <title level="m">Diari di un partigiano ebreo</title>
-                    <author>
-                        <persName>
-                            <forename>Emanuele</forename>
-                            <surname>Artom</surname>
-                        </persName>
-                    </author>
-                    <date from="1940" to="1944">Dal 1940 al 1944</date>
-                </bibl>
+                <listBibl>
+                    <head>Opere consultate:</head>
+                    <bibl xml:id="msCDEC">
+                        <title level="m">Diari di un partigiano ebreo</title>
+                        <author>
+                            <persName ref="#EA">E. Artom</persName>
+                        </author>
+                        <date from="1940" to="1944">Dal 1940 al 1944</date>
+                    </bibl>
+                    <bibl xml:id="trGS">
+                        <title type="main" level="m" ref="https://www.omeka.unito.it/omeka/files/original/d0264d2e5dc3b5a9fd66fa6ace6b36c8.pdf">diari
+                            <title type="sub">
+                                <date from="1940-01" to="1944-02">gennaio 1940 - febbraio 1944</date>
+                            </title>
+                        </title>
+                        <author>
+                            <persName ref="#EA">E. Artom</persName>
+                        </author>
+                        <respStmt>
+                            <resp>A cura di</resp>
+                            <persName xml:id="PDB">Paola De Benedetti</persName>
+                            <persName xml:id="ER">Eloisa Ravenna</persName>
+                            <orgName xml:id="CDEC">Centro di Documentazione Ebraica Contemporanea<abbr type="acronym">CDEC</abbr></orgName>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
             </sourceDesc>
         </fileDesc>
 
