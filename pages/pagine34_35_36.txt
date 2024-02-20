@@ -113,6 +113,8 @@ Walter = Valter Giai (https://www.omeka.unito.it/omeka/files/original/d0264d2e5d
 
 Lino = Lino Jona (https://www.omeka.unito.it/omeka/files/original/d0264d2e5dc3b5a9fd66fa6ace6b36c8.pdf p.99)
 
+
+(?)
 Erodoto = detto di Alicarnasso, storico greco antico. Considerato da Cicerone pater historiae
 
 Marco Aurelio = Antonino Augusto, imperatore romano (161-180), filosofo e scrittore romano (https://it.wikipedia.org/wiki/Marco_Aurelio)
@@ -128,7 +130,7 @@ Tertulliano = Quinto Settimio Fiorente Tertulliano, scrittore romano, filosofo e
 Agostino = Aurelio Agostino d'Ippona, filosofo, vescovo e teologo romano (https://it.wikipedia.org/wiki/Agostino_d%27Ippona)
 
 martiri del Circo = coloro che venivano uccisi all'inizio delle persecuzioni contro i Cristiani all'interno degli anfiteatri, come il Colosseo e simili
-
+(?)
 
 
 Organizzazioni:
@@ -136,5 +138,4 @@ Partito d'Azione = è stato un partito politico italiano di centro-sinistra rifo
 Centro Nazionale = probabilmente testata giornalistica per comunicazione tra partigiani, nessuna fonte
 
 Luoghi:
-Barge = Comune italiano in provincia di Cuneo (https://it.wikipedia.org/wiki/Barge)
 Murello = Comune italiano in provincia di Cuneo (https://it.wikipedia.org/wiki/Murello)
