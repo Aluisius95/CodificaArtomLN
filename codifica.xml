@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+<?xml-stylesheet type="text/xsl" href="codifica.xsl"?>
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -119,7 +119,8 @@
             </projectDesc>
         </encodingDesc>
     </teiHeader>
-    <!--<text xml:lang="it">
+    
+    <text xml:lang="it">
         <group>
             <text xml:id="page_34">
                 <body>
@@ -134,7 +135,7 @@
                 </body>
             </text>
         </group>
-    </text>-->
+    </text>
 </TEI>
 
 <!--
