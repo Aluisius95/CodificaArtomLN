@@ -155,37 +155,44 @@
                             </orgName>
                         </org>
                     </listOrg>
-                    <p>
-                        <pb n="34" facs="image/pagina34.png" />
-                        <lb n="1">
-                        <lb n="2">
-                        <lb n="3">
-                        <lb n="4">
-                        <lb n="5">
-                        <lb n="6">
-                        <lb n="7">
-                        <lb n="8">
-                        <lb n="9">
-                        <lb n="10">
-                        <lb n="11">
-                        <lb n="12">
-                        <lb n="13">
-                        <lb n="14">
-                        <lb n="15">
-                        <lb n="16">
-                        <lb n="17">
-                        <lb n="18">
-                        <lb n="19">
-                        <lb n="20">
-                        <lb n="21">
-                        <lb n="22">
-                        <lb n="23">
-                        <lb n="24">
-                        <lb n="25">
-                        <lb n="26">
-                        <lb n="27">
-                        <lb n="28">
-                    </p>
+                    
+                    <pb n="34" facs="image/pagina34.png" />
+                    <ab xml:id="page34">
+                        <lb n="1" />Hanno una fede ed un entusiasmo tutti
+                        <lb n="2" /><hi style="font-variant: bold">che li rende fanatici. Non</hi> solo sono
+                        <lb n="3" />accurati nella pulizia <corr>,<unclear reason="faded"><note>possibile correzione</note></unclear></corr> non bestemmiano
+                        <lb n="4" />quasi mai e 
+                        <ellipsis>
+                            <metamark />
+                            <supplied reason="omitted">sono</supplied>
+                            <desc>Termine omesso</desc>
+                        </ellipsis> 
+                        aperti alla cultura, se
+                        <lb n="5" />non colti, ma pagano di persona.
+                        <lb n="6" />
+                        <lb n="7" />
+                        <lb n="8" />
+                        <lb n="9" />
+                        <lb n="10" /> 
+                        <lb n="11" />
+                        <lb n="12" />
+                        <lb n="13" />
+                        <lb n="14" />
+                        <lb n="15" />
+                        <lb n="16" />
+                        <lb n="17" />
+                        <lb n="18" />
+                        <lb n="19" />
+                        <lb n="20" />
+                        <lb n="21" />
+                        <lb n="22" />
+                        <lb n="23" />
+                        <lb n="24" />
+                        <lb n="25" />
+                        <lb n="26" />
+                        <lb n="27" />
+                        <lb n="28" />
+                    </ab>
                 </body>
             </text>
             <!--<text xml:id="page_35">
@@ -194,6 +201,38 @@
                         <head>Pagina 35</head>
                         <graphic url="images/pagina35.png" />
                     </figure>
+
+                    <p>
+                        <pb n="35" facs="image/pagina35.png" />
+                        <lb n="1" />
+                        <lb n="2" />
+                        <lb n="3" />
+                        <lb n="4" />
+                        <lb n="5" />
+                        <lb n="6" />
+                        <lb n="7" />
+                        <lb n="8" />
+                        <lb n="9" />
+                        <lb n="10" /> 
+                        <lb n="11" />
+                        <lb n="12" />
+                        <lb n="13" />
+                        <lb n="14" />
+                        <lb n="15" />
+                        <lb n="16" />
+                        <lb n="17" />
+                        <lb n="18" />
+                        <lb n="19" />
+                        <lb n="20" />
+                        <lb n="21" />
+                        <lb n="22" />
+                        <lb n="23" />
+                        <lb n="24" />
+                        <lb n="25" />
+                        <lb n="26" />
+                        <lb n="27" />
+                        <lb n="28" />
+                    </p>
                 </body>
             </text>
             <text xml:id="page_36">
@@ -202,6 +241,38 @@
                         <head>Pagina 36</head>
                         <graphic url="images/pagina36png" />
                     </figure>
+
+                    <p>
+                        <pb n="36" facs="image/pagina36.png" />
+                        <lb n="1" />
+                        <lb n="2" />
+                        <lb n="3" />
+                        <lb n="4" />
+                        <lb n="5" />
+                        <lb n="6" />
+                        <lb n="7" />
+                        <lb n="8" />
+                        <lb n="9" />
+                        <lb n="10" /> 
+                        <lb n="11" />
+                        <lb n="12" />
+                        <lb n="13" />
+                        <lb n="14" />
+                        <lb n="15" />
+                        <lb n="16" />
+                        <lb n="17" />
+                        <lb n="18" />
+                        <lb n="19" />
+                        <lb n="20" />
+                        <lb n="21" />
+                        <lb n="22" />
+                        <lb n="23" />
+                        <lb n="24" />
+                        <lb n="25" />
+                        <lb n="26" />
+                        <lb n="27" />
+                        <lb n="28" />
+                    </p>
                 </body>
             </text>-->
         </group>
