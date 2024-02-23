@@ -129,13 +129,13 @@
                     </figure>
                     <listPerson>
                         <person xml:id="CP">
-                            <persName>Carlo Poccardi<addName>Moretta</addName></persName>
+                            <persName>Carlo Poccardi<addName type="nickname">Moretta</addName></persName>
                         </person>
                         <person xml:id="LB">
                             <persName>Luigi Battistini</persName>
                         </person>
                         <person xml:id="GM">
-                            <persName>Guglielmo Marcellino<addName>Fiore</addName></persName>
+                            <persName>Guglielmo Marcellino<addName type="nickname">Fiore</addName></persName>
                         </person>
                         <person xml:id="GS">
                             <persName>Giorgio Segre</persName>
@@ -159,43 +159,49 @@
                     <pb n="34" facs="image/pagina34.png" />
                     <ab xml:id="page34">
                         <lb n="1" />Hanno una fede ed un entusiasmo tutti
-                        <lb n="2" /><hi style="font-variant: bold">che li rende fanatici. Non</hi> solo sono
-                        <lb n="3" />accurati nella pulizia <corr>,<unclear reason="faded"><note>possibile correzione</note></unclear></corr> non bestemmiano
+                        <lb n="2" /><hi style="font-variant: bold">che li rende fanatici&#46; Non</hi> solo sono
+                        <lb n="3" />accurati nella pulizia 
+                        <corr>&#44;
+                            <unclear reason="faded">
+                                <note>possibile correzione</note>
+                            </unclear>
+                        </corr> non bestemmiano
                         <lb n="4" />quasi mai e 
                         <ellipsis>
-                            <metamark />
-                            <supplied reason="omitted">sono</supplied>
+                            <metamark>&#32;</metamark>
                             <desc>Termine omesso</desc>
+                            <supplied reason="omitted-in-original">sono</supplied>
                         </ellipsis> 
-                        aperti alla cultura, se
-                        <lb n="5" />non colti, ma pagano di persona.
-                        <lb n="6" />
-                        <lb n="7" />
-                        <lb n="8" />
-                        <lb n="9" />
-                        <lb n="10" /> 
-                        <lb n="11" />
-                        <lb n="12" />
-                        <lb n="13" />
-                        <lb n="14" />
-                        <lb n="15" />
-                        <lb n="16" />
-                        <lb n="17" />
-                        <lb n="18" />
-                        <lb n="19" />
-                        <lb n="20" />
-                        <lb n="21" />
-                        <lb n="22" />
-                        <lb n="23" />
-                        <lb n="24" />
-                        <lb n="25" />
-                        <lb n="26" />
-                        <lb n="27" />
-                        <lb n="28" />
+                        aperti alla cultura&#44; se
+                        <lb n="5" />non colti&#44; ma pagano di persona&#46;
+                        <lb n="6" />&#200; commovente pensare a 
+                                <persName ref="#CP">Carlo Poccardi<addName type="nickname">Moretta</addName></persName>
+                        <lb n="7" />che prima di partire per <settlement ref="#A660">Barge</settlement> si &#232;
+                        <lb n="8" />fatto estrarre i denti d&#39;oro e li ha
+                        <lb n="9" />dati alla moglie perch&#233; si mantenesse&#44;
+                        <lb n="10" />pensare a <persName ref="#LB">Luigi</persName> che ha distribuito tutti
+                        <lb n="11" />i suoi indumenti di lana ai soldati&#59;
+                        <lb n="12" />pensare che l'altra sera <persName ref="#GM">Guglielmo Marcellino<addName type="nickname">Fiore</addName></persName> diceva
+                        <lb n="13" />ad un suo compagno senza sapere che
+                        <lb n="14" />lo sentissi&#58; <said aloud="true" direct="true">si capisce che chi non pensa
+                        <lb n="15" />solo a se stesso&#44; ma anche agli altri&#44;
+                        <lb n="16" />deve essere comunista&#46;</said> <del type="overstrike">Lui</del> Ne parlavo
+                        <lb n="17" />con <persName ref="#GS"><abbr>G.</abbr><expan>Giorgio</expan></persName> e si osservava che noi siamo
+                        <lb n="18" />infinitamente pi&#249; scettici&#46; Sappiamo che ba&#61;
+                        <lb break="no" n="19" />stava un piccolo cambiamento di condizioni
+                        <lb n="20" />nella nostra vita <add place="above" status="duplicate">pi&#249; scettici</add> perché partecipassimo
+                        <lb n="21" />a tutto un altro movimento&#44; anzich&#233; al
+                        <lb n="22" />nostro&#46; Siamo iscritti al <orgName ref="#PdA"><abbr>P&#46;d&#39;A&#46;</abbr><expan>Partito d&#39;Azione</expan></orgName>&#44; ma poco
+                        <lb n="23" />affezionati e lo abbandoneremmo senza
+                        <lb n="24" />troppo rammarico se venisse meno ai suoi
+                        <lb n="25" />programmi&#46; Noi non crediamo, ma su&#61;
+                        <lb break="no" n="26" />bordiniamo le nostre idee a uno scetticismo
+                        <lb n="27" />generico&#44; mentre i comunisti credono e si
+                        <lb n="28" />sacrificano&#46; Cos&#236; era la situazione duemila
                     </ab>
                 </body>
             </text>
-            <!--<text xml:id="page_35">
+            <text xml:id="page_35">
                 <body>
                     <figure>
                         <head>Pagina 35</head>
@@ -204,14 +210,14 @@
 
                     <p>
                         <pb n="35" facs="image/pagina35.png" />
-                        <lb n="1" />
-                        <lb n="2" />
-                        <lb n="3" />
-                        <lb n="4" />
-                        <lb n="5" />
-                        <lb n="6" />
-                        <lb n="7" />
-                        <lb n="8" />
+                        <lb n="1" />anni fa tra filosofi e cristiani&#46; L&#39;assurdit&#224;
+                        <lb n="2" />della <unclear reason="illegible" agent="overwrite">su</unclear>perstizione pagana&#44; le ingiustizie <unclear reason="illegible" agent="overwrite">de</unclear>lla
+                        <lb n="3" />societ&#224; apparivano a <persName>Marco Aurelio</persName> e a <persName>Lu&#61;
+                        <lb break="no" n="4" />ciano</persName>&#44; ad <persName>Apollonio di <settlement>Tiana</settlement></persName>&#44; a <persName>Giuliano</persName>
+                        <lb n="5" />come a <persName>Tertulliano</persName>&#44; ad <persName>Agostino</persName>&#44; ai <personGrp>martiri
+                        <lb n="6" />del Circo</personGrp>&#46; <del rend="overstrike">Ero che</del> La mia mentalit&#224; &#232; come
+                        <lb n="7" />quella degli eredi della lunga tradizione
+                        <lb n="8" />letteraria
                         <lb n="9" />
                         <lb n="10" /> 
                         <lb n="11" />
@@ -235,7 +241,7 @@
                     </p>
                 </body>
             </text>
-            <text xml:id="page_36">
+            <!--<text xml:id="page_36">
                 <body>
                     <figure>
                         <head>Pagina 36</head>
