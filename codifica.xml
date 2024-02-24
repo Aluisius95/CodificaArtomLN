@@ -174,10 +174,9 @@
                         </ellipsis> 
                         aperti alla cultura&#44; se
                         <lb n="5" />non colti&#44; ma pagano di persona&#46;
-                        <lb n="6" />&#200; commovente pensare a 
-                                <persName ref="#CP">Carlo Poccardi<addName type="nickname">Moretta</addName></persName>
+                        <lb n="6" />&#200; commovente pensare a <persName ref="#CP">Carlo Poccardi<addName type="nickname">Moretta</addName></persName>
                         <lb n="7" />che prima di partire per <settlement ref="#A660">Barge</settlement> si &#232;
-                        <lb n="8" />fatto estrarre i denti d&#39;oro e li ha
+                        <lb n="8" />fatto estrarre i denti d&apos;oro e li ha
                         <lb n="9" />dati alla moglie perch&#233; si mantenesse&#44;
                         <lb n="10" />pensare a <persName ref="#LB">Luigi</persName> che ha distribuito tutti
                         <lb n="11" />i suoi indumenti di lana ai soldati&#59;
@@ -191,7 +190,7 @@
                         <lb break="no" n="19" />stava un piccolo cambiamento di condizioni
                         <lb n="20" />nella nostra vita <add place="above" status="duplicate">pi&#249; scettici</add> perché partecipassimo
                         <lb n="21" />a tutto un altro movimento&#44; anzich&#233; al
-                        <lb n="22" />nostro&#46; Siamo iscritti al <orgName ref="#PdA"><abbr>P&#46;d&#39;A&#46;</abbr><expan>Partito d&#39;Azione</expan></orgName>&#44; ma poco
+                        <lb n="22" />nostro&#46; Siamo iscritti al <orgName ref="#PdA"><abbr>P&#46;d&apos;A&#46;</abbr><expan>Partito d&apos;Azione</expan></orgName>&#44; ma poco
                         <lb n="23" />affezionati e lo abbandoneremmo senza
                         <lb n="24" />troppo rammarico se venisse meno ai suoi
                         <lb n="25" />programmi&#46; Noi non crediamo, ma su&#61;
@@ -207,48 +206,66 @@
                         <head>Pagina 35</head>
                         <graphic url="images/pagina35.png" />
                     </figure>
+                    <listPerson>
+                        <person xml:id="PB">
+                            <persName>Pasqualina Battistini<addName type="nickname">Gina</addName></persName>
+                        </person>
+                    </listPerson>
 
-                    <p>
-                        <pb n="35" facs="image/pagina35.png" />
-                        <lb n="1" />anni fa tra filosofi e cristiani&#46; L&#39;assurdit&#224;
+                    <pb n="35" facs="image/pagina35.png" />
+                    <ab xml:id="page35">
+                        <lb n="1" />anni fa tra filosofi e cristiani&#46; L&apos;assurdit&#224;
                         <lb n="2" />della <unclear reason="illegible" agent="overwrite">su</unclear>perstizione pagana&#44; le ingiustizie <unclear reason="illegible" agent="overwrite">de</unclear>lla
-                        <lb n="3" />societ&#224; apparivano a <persName>Marco Aurelio</persName> e a <persName>Lu&#61;
+                        <lb n="3" />societ&#224; apparivano a <persName>Marco Aurelio</persName><unclear reason="overwrite">&#44;</unclear> a <persName>Lu&#61;
                         <lb break="no" n="4" />ciano</persName>&#44; ad <persName>Apollonio di <settlement>Tiana</settlement></persName>&#44; a <persName>Giuliano</persName>
-                        <lb n="5" />come a <persName>Tertulliano</persName>&#44; ad <persName>Agostino</persName>&#44; ai <personGrp>martiri
-                        <lb n="6" />del Circo</personGrp>&#46; <del rend="overstrike">Ero che</del> La mia mentalit&#224; &#232; come
+                        <lb n="5" />come a <persName>Tertulliano</persName>&#44; ad <persName>Agostino</persName>&#44; ai <orgName>martiri
+                        <lb n="6" />del Circo</orgName>&#46; <del rend="overstrike">Ero che</del> La m<unclear reason="overwrite">i</unclear>a mentalit&#224; &#232; come
                         <lb n="7" />quella degli eredi della lunga tradizione
-                        <lb n="8" />letteraria
-                        <lb n="9" />
-                        <lb n="10" /> 
-                        <lb n="11" />
-                        <lb n="12" />
-                        <lb n="13" />
-                        <lb n="14" />
-                        <lb n="15" />
-                        <lb n="16" />
-                        <lb n="17" />
-                        <lb n="18" />
-                        <lb n="19" />
-                        <lb n="20" />
-                        <lb n="21" />
-                        <lb n="22" />
-                        <lb n="23" />
-                        <lb n="24" />
-                        <lb n="25" />
-                        <lb n="26" />
-                        <lb n="27" />
-                        <lb n="28" />
-                    </p>
+                        <lb n="8" />letteraria <add place="between">e</add> storica&#44; mentre i <w><abbr>com</abbr><expan>comunisti</expan></w> sono come i
+                        <lb n="9" />Cristiani&#59; conoscono la folla da cui pro&#61;
+                        <lb break="no" n="10" /> vengono&#44; degni di ogni rispetto&#44; per loro le
+                        <lb n="11" />esigenze della societ&#224; sono reali e sofferte&#44;
+                        <lb n="12" />non astrattamente conosciute&#46; &#200; difficile
+                        <lb n="13" />ragionare con loro perch&#233; sono intolleranti&#44;
+                        <lb n="14" />ma quando parlano hanno una grande
+                        <lb n="15" />forza di convinzione&#44; un grande calore&#44;
+                        <lb n="16" /><gap reason="cancelled illegible" quantity="3" unit="chars" />rafforzato dall&apos;esempio&#46; Si pensa che
+                        <lb n="17" />la storia futura non possa non essere
+                        <lb n="18" />per loro&#46; <del rend="overwrite">Ieri</del> L&apos;altro giorno si parlava
+                        <lb n="19" />con <persName ref="#PB">Gina</persName> del problema femminile e citai
+                        <lb n="20" /><persName>Grazia Deledda</persName> come una grande scrittrice&#58;
+                        <lb n="21" />e mi rispose&#58; <del rend="overstrike">ma</del><add place="apex">&lt;&lt;</add>non mi piace&#44; perch&#233; non
+                        <lb n="22" />si occupa della questione sociale&gt;&gt;&#46; Ieri sera
+                        <lb n="23" />si parlava con <persName ref="#GM">Fiore</persName> dei vegetariani
+                        <floatingText rend="underline">
+                            <body>
+                                <ab>
+                                    <lb n="1" />Luigi osserv&#242; ragionevolmente che troppe
+                                    <lb n="2" />erano le sofferenze degli uomini per pensare
+                                    <lb n="3" />a quelle delle <space quantity="9" unit="chars" />bestie&#44; ma
+                                </ab>
+                            </body>
+                        </floatingText>
+                        e Fiore
+                        <lb n="24" /><del rend="overstrike">osserv&#242;<add place="above"> aggiunse</add></del>&#58; &lt;&lt;La natura ha creato <del rend="overstrike">con</del> certe 
+                        <lb n="25" />bestie perch&#233; l&apos;uomo le mangi&gt;&gt;&#46; Per stuzzicarlo
+                        <lb n="26" />nel suo probabile ateismo&#44; ribattei&#58; <del rend="overstrike">&lt;&lt;io non<add place="above">allora credi in Dio</add></del>
+                        <lb n="27" /><add place="above">perch&#233; richiese <persName ref="#GM"><abbr>F.</abbr></persName> che &#232; puro fino</add>perch&#233; credi <gap reason="illegible" quantity="1" unit="chars" /> in una natura coscientemente crean<unclear rend="overwritten">te&#44;</unclear>
+                        <lb n="28" />cio&#232; in Dio&gt;&gt; e <persName ref="#GM">Fiore</persName> si offese&#44; come se suppor&#61;
+                        <lb break="no" n="29" />re che cred<del rend="overwritten">ere<add>a</add></del> in Dio sia calunniarlo&#46; <persName ref="#GS">Giorgio</persName>
+                        <lb n="30" />ed io lo abbiamo pregato di <gap reason="illegible" quantity="7" unit="chars" /> far pubbli&#61;
+                        <lb break="no" n="31" />care sui giornali del <orgName>Centro Nazionale</orgName> che
+                    </ab>
                 </body>
             </text>
-            <!--<text xml:id="page_36">
+            <text xml:id="page_36">
                 <body>
                     <figure>
                         <head>Pagina 36</head>
                         <graphic url="images/pagina36png" />
                     </figure>
 
-                    <p>
+                    <ab xml:id="page36">
                         <pb n="36" facs="image/pagina36.png" />
                         <lb n="1" />
                         <lb n="2" />
@@ -278,9 +295,9 @@
                         <lb n="26" />
                         <lb n="27" />
                         <lb n="28" />
-                    </p>
+                    </ab>
                 </body>
-            </text>-->
+            </text>
         </group>
     </text>
 </TEI>
