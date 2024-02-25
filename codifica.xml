@@ -5,7 +5,6 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader xml:lang="it">
         <fileDesc>
-
             <!-- TITLESTMT: Titolo del progetto -->
             <titleStmt>
                 <title xml:lang="it" type="main" level="m">Diari di un partigiano ebreo</title>
@@ -19,7 +18,7 @@
                     <persName xml:id="LN">Luigi Noto</persName>
                 </respStmt>
             </titleStmt>
-
+            
             <!-- EDITIONSTMT: Edizione del progetto -->
             <editionStmt>
                 <edition>
@@ -66,18 +65,92 @@
                     <persName xml:id="AMdG">Angelo Mario Del Grosso</persName>
                 </respStmt>
             </seriesStmt>
-            
+
+            <!-- NOTESSTMT: glossario e riferimenti -->
+            <notesStmt>
+                <noteGrp>
+                    <note xml:id="people">
+                        <listPerson>
+                            <person xml:id="CP">
+                                <persName>Carlo Poccardi<addName type="nickname">Moretta</addName></persName>
+                            </person>
+                            <person xml:id="LB">
+                                <persName>Luigi Battistini</persName>
+                            </person>
+                            <person xml:id="GM">
+                                <persName>Guglielmo Marcellino<addName type="nickname">Fiore</addName></persName>
+                            </person>
+                            <person xml:id="GS">
+                                <persName>Giorgio Segre</persName>
+                            </person>
+                            <person xml:id="PB">
+                                <persName>Pasqualina Battistini<addName type="nickname">Gina</addName></persName>
+                            </person>
+                            <person xml:id="LJ">
+                                <persName>Lino Jona</persName>
+                            </person>
+                        </listPerson>
+                    </note>
+                    <note xml:id="organizations">
+                        <listOrg>
+                            <org xml:id="PdA">
+                                <orgName ref="https://it.wikipedia.org/wiki/Partito_d%27Azione#La_Resistenza">Partito d'Azione
+                                <abbr>PdA</abbr>
+                                <date from="1942" to="1947">Rifondato nel 1942 e sciolto nel 1947</date>
+                                </orgName>
+                            </org>
+                        </listOrg>
+                    </note>
+                    <note xml:id="places">
+                        <listPlace>
+                            <place xml:id="A660">
+                                <settlement ref="https://it.wikipedia.org/wiki/Barge">Barge</settlement>
+                                <region>Piemonte</region>
+                            </place>
+                            <place xml:id="F811">
+                                <settlement ref="https://it.wikipedia.org/wiki/Murello">Murello</settlement>
+                                <region>Piemonte</region>
+                            </place>
+                        </listPlace>
+                    </note>
+                </noteGrp>
+            </notesStmt>
+
             <!-- SOURCEDESC: info sulle fonti del testo -->
             <sourceDesc>
                 <listBibl>
                     <head>Opere consultate:</head>
+
+                    <!-- Manoscritto originale di Artom -->
                     <bibl xml:id="msCDEC">
                         <title level="m">Diari di un partigiano ebreo</title>
                         <author>
                             <persName ref="#EA">E. Artom</persName>
                         </author>
                         <date from="1940" to="1944">Dal 1940 al 1944</date>
+                        <note>
+                            <msDesc>
+                                <msIdentifier>
+                                    <repository ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Emanuele Artom, Diari</repository>
+                                </msIdentifier>
+                                <physDesc>
+                                    <objectDesc>
+                                        <supportDesc>
+                                            <support>Fogli di <material>carta</material></support>
+                                            <condition>
+                                                <p>Complessivamente integro, leggermente rovinati i bordi delle pagine</p>
+                                            </condition>
+                                        </supportDesc>
+                                        <layoutDesc>
+                                            <layout writtenLines="30">Le pagine hanno una media di 30 righe ciascuna, escludendo parti aggiunte ai lati.</layout>
+                                        </layoutDesc>
+                                    </objectDesc>
+                                </physDesc>
+                            </msDesc>
+                        </note>
                     </bibl>
+
+                    <!-- Trascrizione del documento effettuata da P. De Benedetti ed E. Ravenna -->
                     <bibl xml:id="trGS">
                         <title type="main" level="m" ref="https://www.omeka.unito.it/omeka/files/original/d0264d2e5dc3b5a9fd66fa6ace6b36c8.pdf">diari
                             <title type="sub">
@@ -128,35 +201,6 @@
         <group>
             <text xml:id="page_34">
                 <body>
-                    <listPerson>
-                        <person xml:id="CP">
-                            <persName>Carlo Poccardi<addName type="nickname">Moretta</addName></persName>
-                        </person>
-                        <person xml:id="LB">
-                            <persName>Luigi Battistini</persName>
-                        </person>
-                        <person xml:id="GM">
-                            <persName>Guglielmo Marcellino<addName type="nickname">Fiore</addName></persName>
-                        </person>
-                        <person xml:id="GS">
-                            <persName>Giorgio Segre</persName>
-                        </person>
-                    </listPerson>
-                    <listPlace>
-                        <place xml:id="A660">
-                            <settlement ref="https://it.wikipedia.org/wiki/Barge">Barge</settlement>
-                            <region>Piemonte</region>
-                        </place>
-                    </listPlace>
-                    <listOrg>
-                        <org xml:id="PdA">
-                            <orgName ref="https://it.wikipedia.org/wiki/Partito_d%27Azione#La_Resistenza">Partito d'Azione
-                            <abbr>PdA</abbr>
-                            <date from="1942" to="1947">Rifondato nel 1942 e sciolto nel 1947</date>
-                            </orgName>
-                        </org>
-                    </listOrg>
-                    
                     <pb n="34" facs="images/pagina34.png" />
                     <ab xml:id="page34">
                         <lb n="1" />Hanno una fede ed un <add place="above">&#39;<note>Possibile apostrofo o semplice macchia di inchiostro</note></add> entusiasmo tutti
@@ -192,14 +236,6 @@
             </text>
             <text xml:id="page_35">
                 <body>
-                    <listPerson>
-                        <person xml:id="PB">
-                            <persName>Pasqualina Battistini
-                                <addName type="nickname">Gina</addName>
-                            </persName>
-                        </person>
-                    </listPerson>
-
                     <pb n="35" facs="images/pagina35.png" />
                     <ab xml:id="page35">
                         <lb n="1" />anni fa tra filosofi e cristiani&#46; L&#39;assurdit&#224;
@@ -249,18 +285,6 @@
             </text>
             <text xml:id="page_36">
                 <body>
-                    <listPlace>
-                        <place xml:id="F811">
-                            <settlement ref="https://it.wikipedia.org/wiki/Murello">Murello</settlement>
-                            <region>Piemonte</region>
-                        </place>
-                    </listPlace>
-                    <listPerson>
-                        <person xml:id="LJ">
-                            <persName>Lino Jona</persName>
-                        </person>
-                    </listPerson>
-
                     <pb n="36" facs="images/pagina36.png" />
                     <ab xml:id="page36"><graphic url="images/pagina36png" />   
                         <lb n="1" /><del rend="overstrike">chi</del>gli acquirenti dei beni confiscati agli
@@ -299,7 +323,4 @@
     </text>
 </TEI>
 
-<!--
-    Comando per Xerces
-    java -cp .\Xerces-J-bin.2.12.1\xerces-2_12_1\* dom.Counter -v C:\Users\lnoto\Desktop\CodificaArtomLN\codifica.xml 
--->
+<!-- Comando parser: java -cp .\Xerces-J-bin.2.12.1\xerces-2_12_1\* dom.Counter -v C:\Users\lnoto\Desktop\CodificaArtomLN\codifica.xml -->
