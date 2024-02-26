@@ -23,29 +23,25 @@
             <editionStmt>
                 <edition>
                     Trascrizione e codifica del diario di
-                    <persName ref="#EA">E. Artom</persName>
+                    <persName ref="#EA">E&#46; Artom</persName>
                     <date when="2024-02">febbraio 2024</date>
                 </edition>
                 <respStmt>
                     <resp>Codificato da</resp>
-                    <persName ref="#LN">L. Noto</persName>
+                    <persName ref="#LN">L&#46; Noto</persName>
                 </respStmt>
             </editionStmt>
 
             <!-- EXTENT: informazioni sulla dimensione del lavoro -->
             <extent>
-                <measure quantity="3" unit="pages">Pagine 34-35-36</measure>
+                <measure quantity="3" unit="pages">Pagine 34&#45;35&#45;36</measure>
             </extent>
 
             <!-- PUBLICATIONSTMT: informazioni sulla pubblicazione del documento e del progetto -->
             <publicationStmt>
-                <distributor>
-                    Fondazione
-                    <expan>Centro di Documentazione Ebraica Contemporanea</expan>
-                    <abbr cert="high">CDEC</abbr>
-                </distributor>
+                <publisher>Universit&#224; di <settlement>Pisa</settlement></publisher>
                 <availability status="restricted">
-                    <p>Previa autorizzazione del responsabile dell'archivio secondo le regole dell'Istituto e la normativa vigente.</p>
+                    <p>Secondo le norme dell&#39;ateneo&#46;</p>
                 </availability>
             </publicationStmt>
 
@@ -60,7 +56,7 @@
                 </title>
                 <respStmt>
                     <resp>
-                        Progetto sviluppato per l'esame di <name>Codifica di Testi</name> tenuto dal professore
+                        Progetto sviluppato per l&#39;esame di <name>Codifica di Testi</name> tenuto dal professore
                     </resp>
                     <persName xml:id="AMdG">Angelo Mario Del Grosso</persName>
                 </respStmt>
@@ -94,7 +90,7 @@
                     <note xml:id="organizations">
                         <listOrg>
                             <org xml:id="PdA">
-                                <orgName ref="https://it.wikipedia.org/wiki/Partito_d%27Azione#La_Resistenza">Partito d'Azione
+                                <orgName ref="https://it.wikipedia.org/wiki/Partito_d%27Azione#La_Resistenza">Partito d&#39;Azione
                                 <abbr>PdA</abbr>
                                 <date from="1942" to="1947">Rifondato nel 1942 e sciolto nel 1947</date>
                                 </orgName>
@@ -119,30 +115,29 @@
             <!-- SOURCEDESC: info sulle fonti del testo -->
             <sourceDesc>
                 <listBibl>
-                    <head>Opere consultate:</head>
-
+                    <head>Opere consultate&#58;</head>
                     <!-- Manoscritto originale di Artom -->
                     <bibl xml:id="msCDEC">
                         <title level="m">Diari di un partigiano ebreo</title>
                         <author>
-                            <persName ref="#EA">E. Artom</persName>
+                            <persName ref="#EA">E&#46; Artom</persName>
                         </author>
                         <date from="1940" to="1944">Dal 1940 al 1944</date>
                         <note>
                             <msDesc>
                                 <msIdentifier>
-                                    <repository ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Emanuele Artom, Diari</repository>
+                                    <repository ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Emanuele Artom&#44; Diari</repository>
                                 </msIdentifier>
                                 <physDesc>
                                     <objectDesc>
                                         <supportDesc>
                                             <support>Fogli di <material>carta</material></support>
                                             <condition>
-                                                <p>Complessivamente integro, leggermente rovinati i bordi delle pagine</p>
+                                                <p>Complessivamente integro&#44; leggermente rovinati i bordi delle pagine&#46;</p>
                                             </condition>
                                         </supportDesc>
                                         <layoutDesc>
-                                            <layout writtenLines="30">Le pagine hanno una media di 30 righe ciascuna, escludendo parti aggiunte ai lati.</layout>
+                                            <layout writtenLines="30">Le pagine hanno una media di 30 righe ciascuna&#44; escludendo parti aggiunte ai lati&#46;</layout>
                                         </layoutDesc>
                                     </objectDesc>
                                 </physDesc>
@@ -188,7 +183,8 @@
         </profileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>Progetto sviluppato per l'esame di Codifica di Testi a.a. 2022-2023</p>
+                <p>Progetto sviluppato per l&#39;esame di Codifica di Testi a&#46;a&#46; 2022&#45;2023&#46;</p>
+                <p>Tutti gli elementi sono stati codificati secondo le norme previste dalle Guidelines P5 della TEI&#46;</p>
             </projectDesc>
         </encodingDesc>
     </teiHeader>
@@ -206,7 +202,7 @@
                         <lb n="1" />Hanno una fede ed un <add place="above">&#39;<note>Possibile apostrofo o semplice macchia di inchiostro</note></add> entusiasmo tutti
                         <lb n="2" /><hi style="font-variant: bold">che li rende fanatici&#46; Non</hi> solo <unclear reason="faded">&#44;</unclear> sono
                         <lb n="3" />accurati nella pulizia<unclear reason="illegible">&#44;</unclear> non bestemmiano
-                        <lb n="4" />quasi mai e <supplied reason="omitted-in-original">sono</supplied> aperti alla cultura&#44; se
+                        <lb n="4" />quasi mai e <supplied reason="omitted-in-original" resp="#LN">sono</supplied> aperti alla cultura&#44; se
                         <lb n="5" />non colti&#44; ma pagano di persona&#46;
                         <lb n="6" />&#200; commovente pensare a <persName ref="#CP">Moretta</persName>
                         <lb n="7" />che prima di partire per <settlement ref="#A660">Barge</settlement> si &#232;
