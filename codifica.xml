@@ -85,6 +85,9 @@
                             <person xml:id="LJ">
                                 <persName>Lino Jona</persName>
                             </person>
+                            <person xml:id="VG">
+                                <persName>Valter Giai</persName>
+                            </person>
                         </listPerson>
                     </note>
                     <note xml:id="organizations">
@@ -189,20 +192,82 @@
         </encodingDesc>
     </teiHeader>
     <facsimile>
-        <graphic url="images/pagina34.png" />
-        <graphic url="images/pagina35.png" />
-        <graphic url="images/pagina36.png" />
+        <surface>
+            <graphic url='pagina34.png' width='510px' height='708px' />
+            <zone ulx="289" uly="21" lrx="300" lry="32" ref="#pg34_a1"/>
+            <zone ulx="33" uly="48" lrx="328" lry="77" ref="#pg34_hi1"/>
+            <zone ulx="381" uly="64" lrx="389" lry="78" ref="#pg34_u1"/>
+            <zone ulx="279" uly="90" lrx="291" lry="106" ref="#pg34_u2"/>
+            <zone ulx="163" uly="103" lrx="245" lry="125" ref="#pg34_s1"/>
+            <zone ulx="343" uly="164" lrx="447" lry="193" ref="#CP"/>
+            <zone ulx="342" uly="192" lrx="418" lry="218" ref="#A660"/>
+            <zone ulx="154" uly="254" lrx="211" lry="283" ref="#LB"/>
+            <zone ulx="321" uly="307" lrx="387" lry="332" ref="#GM"/>
+            <zone ulx="294" uly="405" lrx="331" lry="434" ref="#pg34_d1"/>
+            <zone ulx="74" uly="439" lrx="100" lry="466" ref="#GS"/>
+            <zone ulx="316" uly="457" lrx="364" lry="482" ref="#pg34_u3"/>
+            <zone ulx="193" uly="493" lrx="304" lry="505" ref="#pg34_a2"/>
+            <zone ulx="294" uly="541" lrx="370" lry="568" ref="#PdA"/>
+        </surface>
+        <surface>
+            <graphic url='pagina35.png' width='510px' height='708px' />
+            <zone ulx="86" uly="41" lrx="103" lry="57" ref="#pg35_u1"/>
+            <zone ulx="423" uly="40" lrx="443" lry="54" ref="#pg35_u2"/>
+            <zone ulx="386" uly="65" lrx="399" lry="78" ref="#pg35_u3"/>
+            <zone ulx="126" uly="121" lrx="206" lry="143" ref="#pg35_d1"/>
+            <zone ulx="264" uly="127" lrx="276" lry="139" ref="#pg35_u4"/>
+            <zone ulx="122" uly="169" lrx="134" lry="181" ref="#pg35_a1"/>
+            <zone ulx="292" uly="165" lrx="335" lry="179" ref="#pg35_abbr1"/>
+            <zone ulx="29" uly="347" lrx="59" lry="364" ref="#pg35_gap1"/>
+            <zone ulx="125" uly="384" lrx="165" lry="404" ref="#pg35_d2"/>
+            <zone ulx="66" uly="408" lrx="127" lry="428" ref="#PB"/>
+            <zone ulx="34" uly="462" lrx="51" lry="476" ref="#pg35_u5"/>
+            <zone ulx="167" uly="448" lrx="213" lry="468" ref="#pg35_sub1"/>
+            <zone ulx="185" uly="493" lrx="229" lry="514" ref="#GM"/>
+            <zone ulx="454" uly="331" lrx="499" lry="599" ref="#pg35_ft"/>
+            <zone ulx="478" uly="338" lrx="493" lry="369" ref="#LB"/>
+            <zone ulx="415" uly="487" lrx="462" lry="507" ref="#GM"/>
+            <zone ulx="31" uly="516" lrx="99" lry="536" ref="#pg35_sub2"/>
+            <zone ulx="357" uly="516" lrx="397" lry="529" ref="#pg35_d3"/>
+            <zone ulx="368" uly="551" lrx="473" lry="577" ref="#pg35_sub3"/>
+            <zone ulx="13" uly="575" lrx="221" lry="585" ref="#pg35_a2"/>
+            <zone ulx="16" uly="590" lrx="42" lry="603" ref="#pg35_a3"/>
+            <zone ulx="76" uly="590" lrx="90" lry="604" ref="#pg35_gap2"/>
+            <zone ulx="466" uly="576" lrx="484" lry="596" ref="#pg35_u6"/>
+            <zone ulx="148" uly="626" lrx="170" lry="644" ref="#pg35_sub4"/>
+            <zone ulx="424" uly="615" lrx="487" lry="643" ref="#GS"/>
+            <zone ulx="325" uly="638" lrx="389" lry="661" ref="#pg35_gap3"/>
+        </surface>
+        <surface>
+            <graphic url='pagina36.png' width='510px' height='708px' />
+            <zone ulx="29" uly="30" lrx="59" lry="47" ref="#pg36_d1"/>
+            <zone ulx="48" uly="83" lrx="67" lry="97" ref="#pg36_u1"/>
+            <zone ulx="280" uly="76" lrx="358" lry="96" ref="#pg36_d2"/>
+            <zone ulx="50" uly="147" lrx="144" lry="167" ref="#pg36_c1"/>
+            <zone ulx="188" uly="148" lrx="266" lry="166" ref="#F811"/>
+            <zone ulx="61" uly="170" lrx="105" lry="190" ref="#LJ"/>
+            <zone ulx="362" uly="184" lrx="390" lry="195" ref="#pg36_ag"/>
+            <zone ulx="317" uly="210" lrx="376" lry="235" ref="#GM"/>
+            <zone ulx="351" uly="400" lrx="376" lry="419" ref="#pg36_u2"/>
+            <zone ulx="373" uly="428" lrx="393" lry="442" ref="#pg36_c2"/>
+            <zone ulx="95" uly="448" lrx="229" lry="469" ref="#pg36_d3"/>
+            <zone ulx="202" uly="492" lrx="272" lry="515" ref="#PdA"/>
+            <zone ulx="25" uly="582" lrx="94" lry="604" ref="#VG"/>
+            <zone ulx="28" uly="603" lrx="78" lry="626" ref="#pg36_c3"/>
+            <zone ulx="312" uly="620" lrx="384" lry="640" ref="#PdA"/>
+            <zone ulx="174" uly="671" lrx="217" lry="689" ref="#pg36_c4"/>
+        </surface>
     </facsimile>
     <text xml:lang="it">
         <group>
             <text xml:id="page_34">
                 <body>
-                    <pb n="34" facs="images/pagina34.png" />
+                    <pb n="34" facs="pages/pagina34.png" />
                     <ab xml:id="page34">
-                        <lb n="1" />Hanno una fede ed un <add place="above">&#39;<note>Possibile apostrofo o semplice macchia di inchiostro</note></add> entusiasmo tutti
-                        <lb n="2" /><hi style="font-variant: bold">che li rende fanatici&#46; Non</hi> solo <unclear reason="faded">&#44;</unclear> sono
-                        <lb n="3" />accurati nella pulizia<unclear reason="illegible">&#44;</unclear> non bestemmiano
-                        <lb n="4" />quasi mai e <supplied reason="omitted-in-original" resp="#LN">sono</supplied> aperti alla cultura&#44; se
+                        <lb n="1" />Hanno una fede ed un <add place="above" xml:id="pg34_a1">&#39;<note>Possibile apostrofo</note></add> entusiasmo tutti
+                        <lb n="2" /><hi style="font-variant: bold" xml:id="pg34_hi1">che li rende fanatici&#46; Non</hi> solo <unclear reason="faded" xml:id="pg34_u1">&#44;</unclear> sono
+                        <lb n="3" />accurati nella pulizia<unclear reason="illegible" xml:id="pg34_u2">&#44;</unclear> non bestemmiano
+                        <lb n="4" />quasi mai e <supplied reason="omitted-in-original" resp="#LN" xml:id="pg34_s1">sono</supplied> aperti alla cultura&#44; se
                         <lb n="5" />non colti&#44; ma pagano di persona&#46;
                         <lb n="6" />&#200; commovente pensare a <persName ref="#CP">Moretta</persName>
                         <lb n="7" />che prima di partire per <settlement ref="#A660">Barge</settlement> si &#232;
@@ -214,11 +279,11 @@
                         <lb n="13" />ad un suo compagno senza sapere che
                         <lb n="14" />lo sentissi&#58; <said aloud="true" direct="true">si capisce che chi non pensa
                         <lb n="15" />solo a se stesso&#44; ma anche agli altri&#44;
-                        <lb n="16" />deve essere comunista&#46;</said> <del type="overstrike"><unclear>Lui</unclear></del> Ne parlavo
+                        <lb n="16" />deve essere comunista&#46;</said> <del type="overstrike" xml:id="pg34_d1"><unclear>Lui</unclear></del> Ne parlavo
                         <lb n="17" />con <persName ref="#GS"><choice><abbr>G.</abbr><expan>Giorgio</expan></choice></persName> e si osservava che noi siamo
-                        <lb n="18" />infinitamente pi&#249; scettici&#46; <unclear reason="faded">Sappi</unclear>amo che ba&#61;
+                        <lb n="18" />infinitamente pi&#249; scettici&#46; <unclear reason="faded" xml:id="pg34_u3">Sappi</unclear>amo che ba&#61;
                         <lb break="no" n="19" />stava un piccolo cambiamento di condizioni
-                        <lb n="20" />nella nostra <add place="above" status="duplicate">pi&#249; scettici</add> vita perché partecipassimo
+                        <lb n="20" />nella nostra <add place="above" status="duplicate" xml:id="pg34_a2">pi&#249; scettici</add> vita perché partecipassimo
                         <lb n="21" />a tutto un altro movimento&#44; anzich&#233; al
                         <lb n="22" />nostro&#46; Siamo iscritti al <orgName ref="#PdA"><choice><abbr>P&#46;d&#39;A&#46;</abbr><expan>Partito d&#39;Azione</expan></choice></orgName>&#44; ma poco
                         <lb n="23" />affezionati e lo abbandoneremmo senza
@@ -232,16 +297,16 @@
             </text>
             <text xml:id="page_35">
                 <body>
-                    <pb n="35" facs="images/pagina35.png" />
+                    <pb n="35" facs="pages/pagina35.png" />
                     <ab xml:id="page35">
                         <lb n="1" />anni fa tra filosofi e cristiani&#46; L&#39;assurdit&#224;
-                        <lb n="2" />della <unclear reason="illegible" agent="overwrite">su</unclear>perstizione pagana&#44; le ingiustizie <unclear reason="illegible" agent="overwrite">de</unclear>lla
-                        <lb n="3" />societ&#224; apparivano a <persName>Marco Aurelio</persName><unclear reason="overwrite">&#44;</unclear> a <persName>Lu&#61;
+                        <lb n="2" />della <unclear reason="illegible" agent="overwrite" xml:id="pg35_u1">su</unclear>perstizione pagana&#44; le ingiustizie <unclear reason="illegible" agent="overwrite" xml:id="pg35_u2">de</unclear>lla
+                        <lb n="3" />societ&#224; apparivano a <persName>Marco Aurelio</persName><unclear reason="overwrite" xml:id="pg35_u3">&#44;</unclear> a <persName>Lu&#61;
                         <lb break="no" n="4" />ciano</persName>&#44; ad <persName>Apollonio di <settlement>Tiana</settlement></persName>&#44; a <persName>Giuliano</persName>
                         <lb n="5" />come a <persName>Tertulliano</persName>&#44; ad <persName>Agostino</persName>&#44; ai <orgName>martiri
-                        <lb n="6" />del Circo</orgName>&#46; <del rend="overstrike">Ero che</del> La m<unclear reason="overwrite">i</unclear>a mentalit&#224; &#232; come
+                        <lb n="6" />del Circo</orgName>&#46; <del rend="overstrike" xml:id="pg35_d1">Ero che</del> La m<c><unclear reason="overwrite" xml:id="pg35_u4">i</unclear></c>a mentalit&#224; &#232; come
                         <lb n="7" />quella degli eredi della lunga tradizione
-                        <lb n="8" />letteraria <add place="between">e</add> storica&#44; mentre i <orgName><choice><abbr>com</abbr><expan>comunisti</expan></choice></orgName> sono come i
+                        <lb n="8" />letteraria <add place="between" xml:id="pg35_a1">e</add> storica&#44; mentre i <orgName xml:id="pg35_abbr1"><choice><abbr>com</abbr><expan>comunisti</expan></choice></orgName> sono come i
                         <lb n="9" />Cristiani&#59; conoscono la folla da cui pro&#61;
                         <lb break="no" n="10" /> vengono&#44; sono fanatici&#44; talvolta urtanti e
                         <lb n="11" />ridicoli&#44; degni di ogni rispetto&#44; per loro le
@@ -250,68 +315,68 @@
                         <lb n="14" />ragionare con loro perch&#233; sono intolleranti&#44;
                         <lb n="15" />ma quando parlano hanno una grande
                         <lb n="16" />forza di convinzione&#44; un grande calore&#44;
-                        <lb n="17" /><gap reason="cancelled illegible" quantity="3" unit="chars" />rafforzato dall&#39;esempio&#46; Si pensa che
+                        <lb n="17" /><gap reason="cancelled illegible" quantity="3" unit="chars" xml:id="pg35_gap1"/>rafforzato dall&#39;esempio&#46; Si pensa che
                         <lb n="18" />la storia futura non possa non essere
-                        <lb n="19" />per loro&#46; <del rend="overwrite">Ieri</del> L&#39;altro giorno si parlava
+                        <lb n="19" />per loro&#46; <del rend="overwrite" xml:id="pg35_d2">Ieri</del> L&#39;altro giorno si parlava
                         <lb n="20" />con <persName ref="#PB">Gina</persName> del problema femminile e citai
                         <lb n="21" /><persName>Grazia Deledda</persName> come una grande scrittrice&#58;
-                        <lb n="22" /><unclear reason="illegible">e</unclear> mi rispose&#58; <said aloud="true" direct="true"><subst><del rend="overstrike">ma</del><add place="apex">&#60;&#60;</add></subst>non mi piace&#44; perch&#233; non
+                        <lb n="22" /><unclear reason="illegible" xml:id="pg35_u5">e</unclear> mi rispose&#58; <said aloud="true" direct="true"><subst xml:id="pg35_sub1"><del rend="overstrike">ma</del><add place="apex">&#60;&#60;</add></subst>non mi piace&#44; perch&#233; non
                         <lb n="23" />si occupa della questione sociale&#62;&#62;</said>&#46; Ieri sera
                         <lb n="24" />si parlava con <persName ref="#GM">Fiore</persName> dei vegetariani
-                        <floatingText rend="underline">
+                        <floatingText rend="underline" xml:id="pg35_ft">
                             <body>
                                 <ab>
-                                    <lb n="1" />Luigi osserv&#242; ragionevolmente che troppe
+                                    <lb n="1" /><persName ref="#LB">Luigi</persName> osserv&#242; ragionevolmente che troppe
                                     <lb n="2" />erano le sofferenze degli uomini per pensare
                                     <lb n="3" />a quelle delle <space quantity="9" unit="chars" />bestie&#44; ma
                                 </ab>
                             </body>
                         </floatingText>
-                        e Fiore
-                        <lb n="25" /><subst><del rend="overstrike">osserv&#242;</del><add place="above"> aggiunse</add></subst>&#58; <said aloud="true" direct="true">&#60;&#60;La natura ha creato <del rend="overstrike">con</del> certe 
+                        e <persName ref="#GM">Fiore</persName>
+                        <lb n="25" /><subst xml:id="pg35_sub2"><del rend="overstrike">osserv&#242;</del><add place="above"> aggiunse</add></subst>&#58; <said aloud="true" direct="true">&#60;&#60;La natura ha creato <del rend="overstrike" xml:id="pg35_d3">con</del> certe 
                         <lb n="26" />bestie perch&#233; l&#39;uomo le mangi&#62;&#62;</said>&#46; Per stuzzicarlo
-                        <lb n="27" />nel suo probabile ateismo&#44; ribattei&#58; <said aloud="true" direct="true"><subst><del rend="overstrike">&#60;&#60;io non</del><add place="above">allora credi in Dio</add></subst></said>
-                        <lb n="28" /><add place="above"><said aloud="true" direct="true">perch&#233;</said> richiese <persName ref="#GM"><choice><abbr>F.</abbr><expan>Fiore</expan></choice></persName> che &#232; puro fino</add> <said aloud="true" direct="true"><add place="before">perch&#233;</add> credi <gap reason="illegible" quantity="1" unit="chars" /> in una natura coscientemente crean<unclear rend="overwritten">te&#44;</unclear>
+                        <lb n="27" />nel suo probabile ateismo&#44; ribattei&#58; <said aloud="true" direct="true"><subst xml:id="pg35_sub3"><del rend="overstrike">&#60;&#60;io non</del><add place="above">allora credi in Dio</add></subst></said>
+                        <lb n="28" /><add place="above" xml:id="pg35_a2"><said aloud="true" direct="true">perch&#233;</said> richiese <persName ref="#GM"><choice><abbr>F.</abbr><expan>Fiore</expan></choice></persName> che &#232; puro fino</add> <said aloud="true" direct="true"><add place="before" xml:id="pg35_a3">perch&#233;</add> credi <gap reason="illegible" quantity="1" unit="chars" xml:id="pg35_gap2" /> in una natura coscientemente crean<unclear rend="overwritten" xml:id="pg35_u6">te&#44;</unclear>
                         <lb n="29" />cio&#232; in Dio&#62;&#62;</said> e <persName ref="#GM">Fiore</persName> si offese&#44; come se suppor&#61;
-                        <lb break="no" n="30" />re che cred<subst><del rend="overwritten">ere</del><add>a</add></subst> in Dio sia calunniarlo&#46; <persName ref="#GS">Giorgio</persName>
-                        <lb n="31" />ed io lo abbiamo pregato di <gap reason="illegible" quantity="7" unit="chars" /> far pubbli&#61;
+                        <lb break="no" n="30" />re che cred<subst xml:id="pg35_sub4"><del rend="overwritten">ere</del><add>a</add></subst> in Dio sia calunniarlo&#46; <persName ref="#GS">Giorgio</persName>
+                        <lb n="31" />ed io lo abbiamo pregato di <gap reason="illegible" quantity="7" unit="chars" xml:id="pg35_gap3"/> far pubbli&#61;
                         <lb break="no" n="32" />care sui giornali del <orgName>Centro Nazionale</orgName> che
                     </ab>
                 </body>
             </text>
             <text xml:id="page_36">
                 <body>
-                    <pb n="36" facs="images/pagina36.png" />
-                    <ab xml:id="page36"><graphic url="images/pagina36png" />   
-                        <lb n="1" /><del rend="overstrike">chi</del>gli acquirenti dei beni confiscati agli
+                    <pb n="36" facs="pages/pagina36.png" />
+                    <ab xml:id="page36">   
+                        <lb n="1" /><del rend="overstrike" xml:id="pg36_d1">chi</del>gli acquirenti dei beni confiscati agli
                         <lb n="2" />Ebrei sappiano che saranno trattati come
-                        <lb n="3" />qu<unclear reason="illegible">e</unclear>lli che acquistano <del rend="overstrike">beni ru</del> cosciente&#61;
+                        <lb n="3" />qu<unclear reason="covered" xml:id="pg36_u1">e</unclear>lli che acquistano <del rend="overstrike" xml:id="pg36_d2">beni ru</del> cosciente&#61;
                         <lb break="no" n="4" />mente beni rubati&#46; Ho preparato per i gior&#61;
                         <lb break="no" n="5" />nali una breve relazione della impresa del&#61;
-                        <lb break="no" n="6" />l&#39;<w><choice><sic>Areoporto</sic><corr resp="#LN">Aeroporto</corr></choice></w> di <settlement ref="#F811">Murello</settlement>&#46; Dopo la necrologia
+                        <lb break="no" n="6" />l&#39;<w><choice xml:id="pg36_c1"><sic>Areoporto</sic><corr resp="#LN">Aeroporto</corr></choice></w> di <settlement ref="#F811"><choice><sic>Morello</sic><corr resp="#LN">Murello</corr></choice></settlement>&#46; Dopo la necrologia
                         <lb n="7" />di <persName ref="#LJ">Lino</persName> &#232; la mia prima pubblicazione&#44;
-                        <lb n="8" />dato che la prefazione di <persName>Erodoto</persName><add place="above"><gap quantity="3" unit="chars" /></add> non
-                        <lb n="9" />&#232; ancora uscita&#46; Stamane <persName>Fiore</persName>&#44; forse
+                        <lb n="8" />dato che la prefazione di <persName>Erodoto</persName><add place="above" xml:id="pg36_ag"><gap quantity="3" unit="chars" /></add> non
+                        <lb n="9" />&#232; ancora uscita&#46; Stamane <persName ref="#GM">Fiore</persName>&#44; forse
                         <lb n="10" />perch&#233; ieri l&#39;avevo fatto arrabbiare&#44; era
                         <lb n="11" />molto sgarbato&#44; ma ho visto che protesta
                         <lb n="12" />con tutti&#46; Sebbene gli abbia regalato un
-                        <lb n="13" />fazzoletto&#44; mi ha detto&#58;&#45;<said aloud="true" direct="true">prendi il caff&#232;
+                        <lb n="13" />fazzoletto&#44; mi ha detto&#58; <said aloud="true" direct="true">&#45;prendi il caff&#232;
                         <lb n="14" />e latte come nei tuoi villini&#59; hai bisogno
                         <lb n="15" />di proletarizzarti</said> &#45; frase piuttosto infelice&#44; se
                         <lb n="16" />si pensa che sono venuto qui per combattere
-                        <lb n="17" />e che proprio ieri i fascisti mi <unclear rend="rewrite">a</unclear>vevano
-                        <lb n="18" />confiscato i miei supposti villini<choice><sic>&#95;</sic><corr resp="#LN">&#46;</corr></choice> Ad ogni
-                        <lb n="19" />modo <del rend="overstrike">stamane ho</del> quest'oggi ho lavato i
+                        <lb n="17" />e che proprio ieri i fascisti mi <unclear rend="rewrite" xml:id="pg36_u2">a</unclear>vevano
+                        <lb n="18" />confiscato i miei supposti villini<choice xml:id="pg36_c2"><sic>&#95;</sic><corr resp="#LN">&#46;</corr></choice> Ad ogni
+                        <lb n="19" />modo <del rend="overstrike" xml:id="pg36_d3">stamane ho</del> quest'oggi ho lavato i
                         <lb n="20" />piatti per tutti e tenuto acceso il fuoco. Mi ha
                         <lb n="21" />anche detto che il <orgName ref="#PdA"><choice><abbr>P&#46;d&#39;A&#46;</abbr><expan>Partito d&#39;Azione</expan></choice></orgName> non tollera comunisti
                         <lb n="22" />nelle sue bande e non d&#224; loro neppure da
                         <lb n="23" />mangiare&#44; mentre io sono trattato benissimo
                         <lb n="24" />qui&#58; &#232; la rappresaglia verbale per il fatto di
-                        <lb n="25" /><persName><choice><sic>Walter</sic><corr resp="#LN">Valter</corr></choice></persName>&#46; Dopo avermi accusato di aver detto che
-                        <lb n="26" /><orgName><choice><abbr>Com</abbr><expan>Comunismo</expan></choice></orgName> e <orgName>Fascismo</orgName> sono la stessa cosa&#44; il che non
+                        <lb n="25" /><persName ref="#VG"><choice><sic>Walter</sic><corr resp="#LN">Valter</corr></choice></persName>&#46; Dopo avermi accusato di aver detto che
+                        <lb n="26" /><orgName><choice xml:id="pg36_c3"><abbr>Com</abbr><expan>Comunismo</expan></choice></orgName> e <orgName>Fascismo</orgName> sono la stessa cosa&#44; il che non
                         <lb n="27" />ho mai detto&#44; ha previsto che il <orgName ref="#PdA"><choice><abbr>P&#46;d&#39;A&#46;</abbr><expan>Partito d&#39;Azione</expan></choice></orgName> avrebbe
                         <lb n="28" />tradito il suo programma&#44; passando alla
-                        <lb n="29" />reazione&#46; Questi <orgName><choice><abbr>com&#46;</abbr><expan>comunisti</expan></choice></orgName> sono molto pi&#249; pratici e
+                        <lb n="29" />reazione&#46; Questi <orgName><choice xml:id="pg36_c4"><abbr>com&#46;</abbr><expan>comunisti</expan></choice></orgName> sono molto pi&#249; pratici e
                     </ab>
                 </body>
             </text>
