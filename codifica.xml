@@ -193,7 +193,7 @@
     </teiHeader>
     <facsimile>
         <surface>
-            <graphic url='pagina34.png' width='510px' height='708px' />
+            <graphic xml:id="img34" url='pages/pagina34.png' width='510px' height='708px' />
             <zone ulx="289" uly="21" lrx="300" lry="32" ref="#pg34_a1"/>
             <zone ulx="33" uly="48" lrx="328" lry="77" ref="#pg34_hi1"/>
             <zone ulx="381" uly="64" lrx="389" lry="78" ref="#pg34_u1"/>
@@ -210,7 +210,7 @@
             <zone ulx="294" uly="541" lrx="370" lry="568" ref="#PdA"/>
         </surface>
         <surface>
-            <graphic url='pagina35.png' width='510px' height='708px' />
+            <graphic xml:id="img35" url='pages/pagina35.png' width='510px' height='708px' />
             <zone ulx="86" uly="41" lrx="103" lry="57" ref="#pg35_u1"/>
             <zone ulx="423" uly="40" lrx="443" lry="54" ref="#pg35_u2"/>
             <zone ulx="386" uly="65" lrx="399" lry="78" ref="#pg35_u3"/>
@@ -239,7 +239,7 @@
             <zone ulx="325" uly="638" lrx="389" lry="661" ref="#pg35_gap3"/>
         </surface>
         <surface>
-            <graphic url='pagina36.png' width='510px' height='708px' />
+            <graphic xml:id="img36" url='pages/pagina36.png' width='510px' height='708px' />
             <zone ulx="29" uly="30" lrx="59" lry="47" ref="#pg36_d1"/>
             <zone ulx="48" uly="83" lrx="67" lry="97" ref="#pg36_u1"/>
             <zone ulx="280" uly="76" lrx="358" lry="96" ref="#pg36_d2"/>
