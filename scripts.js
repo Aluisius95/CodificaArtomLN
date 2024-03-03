@@ -12,6 +12,10 @@ $(document).ready(function(){
         if($(this).attr("aria-expanded")=='false'){
             $(this).attr("aria-expanded","true");
             $(".dropdown-menu").show();
+            $(".dropdown-item").click(function(){
+                $("#navbarDropdownMenuLink").attr("aria-expanded","false");
+                $(".dropdown-menu").hide();
+            })
         } else {
             $(this).attr("aria-expanded","false");
             $(".dropdown-menu").hide();
