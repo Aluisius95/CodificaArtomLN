@@ -40,6 +40,9 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="#glossario">Glossario</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="#about">About</a>
                                 </li>
                             </ul>
@@ -47,12 +50,12 @@
                     </nav>
                 </header>
 
-                <!-- Introduzione -->
+            <!-- Introduzione -->
                 <div class="container" style="padding: 5rem 0 0 0">
                     <div class="text-center">
                         <h2 class="text-uppercase"><xsl:value-of select="//t:titleStmt//t:title" /></h2>
                         <h3>Manoscritto di 
-                            <a href="https://it.wikipedia.org/wiki/Emanuele_Artom" class="text-decoration-none" target="_blank" style="color: black; text-style: none">
+                            <a href="https://it.wikipedia.org/wiki/Emanuele_Artom" class="text-decoration-none" target="_blank" style="color: black;">
                                 <xsl:value-of select="//t:titleStmt//t:persName[@xml:id='EA']" />
                                 <i style="font-size:24px" class="fa">&#xf08e;</i>
                             </a>
@@ -64,47 +67,86 @@
                     </div>
                 </div>
 
-                <!-- Pagine -->
-                <div class="container" style="padding: 5rem 0">
-                    <div class="row" id="page34" style="padding: 4rem 0">
-                        <div class="col-sm image-container">
-                            <xsl:element name="img">
-                                <xsl:attribute name="src">
-                                    <xsl:value-of select="//t:graphic[@xml:id='img34']/@url"/>
-                                </xsl:attribute>
-                            </xsl:element>
+            <!-- Pagine -->
+                <div class="container" style="padding: 3rem 0">
+                    <div class="text-center">
+                        <p>Tramite i pulsanti presenti sopra ogni pagina, potranno essere visualizzati i vari elementi.</p>
+                    </div>
+                    <div id="page34">
+                        <div class="col" style="padding: 3.5rem 0 2rem 0; margin-left: 20%">
+                            <span style="margin-right: 5%">Pagina 34</span>
+                            <button type="button" class="btn btn-outline-dark" id="pg34D">Deleted</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg34A">Added</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg34S">Substitution</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg34C">Correction</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg34AB">Abbreviation</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg34G">Gap</button>
                         </div>
-                        <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
-                            <xsl:apply-templates select="//t:text[@xml:id='page_34']" />
+                        <div class="row">
+                            <div class="col-sm image-container">
+                                <xsl:element name="img">
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="//t:graphic[@xml:id='img34']/@url"/>
+                                    </xsl:attribute>
+                                </xsl:element>
+                            </div>
+                            <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
+                                <xsl:apply-templates select="//t:text[@xml:id='page_34']" />
+                            </div>
+                            <hr/>
                         </div>
                     </div>
-                    <div class="row" id="page35" style="padding: 4rem 0">
-                        <div class="col-sm image-container">
-                            <xsl:element name="img">
-                                <xsl:attribute name="src">
-                                    <xsl:value-of select="//t:graphic[@xml:id='img35']/@url"/>
-                                </xsl:attribute>
-                            </xsl:element>
+                    <div id="page35">
+                        <div class="col" style="padding: 3.5rem 0 2rem 0; margin-left: 20%">
+                            <span style="margin-right: 5%">Pagina 35</span>
+                            <button type="button" class="btn btn-outline-dark" id="pg35D">Deleted</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg35A">Added</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg35S">Substitution</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg35C">Correction</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg35AB">Abbreviation</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg35G">Gap</button>
                         </div>
-                        <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
-                            <xsl:apply-templates select="//t:text[@xml:id='page_35']" />
+                        <div class="row">
+                            <div class="col-sm image-container">
+                                <xsl:element name="img">
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="//t:graphic[@xml:id='img35']/@url"/>
+                                    </xsl:attribute>
+                                </xsl:element>
+                            </div>
+                            <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
+                                <xsl:apply-templates select="//t:text[@xml:id='page_35']" />
+                            </div>
+                            <hr/>
                         </div>
                     </div>
-                    <div class="row" id="page36" style="padding: 5rem 0">
-                        <div class="col-sm image-container">
-                            <xsl:element name="img">
-                                <xsl:attribute name="src">
-                                    <xsl:value-of select="//t:graphic[@xml:id='img36']/@url"/>
-                                </xsl:attribute>
-                            </xsl:element>
+                    <div id="page36">
+                        <div class="col" style="padding: 3.5rem 0 2rem 0; margin-left: 20%">
+                            <span style="margin-right: 5%">Pagina 36</span>
+                            <button type="button" class="btn btn-outline-dark" id="pg36D">Deleted</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg36A">Added</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg36S">Substitution</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg36C">Correction</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg36AB">Abbreviation</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg36G">Gap</button>
                         </div>
-                        <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
-                            <xsl:apply-templates select="//t:text[@xml:id='page_36']" />
+                        <div class="row">
+                            <div class="col-sm image-container">
+                                <xsl:element name="img">
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="//t:graphic[@xml:id='img36']/@url"/>
+                                    </xsl:attribute>
+                                </xsl:element>
+                            </div>
+                            <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
+                                <xsl:apply-templates select="//t:text[@xml:id='page_36']" />
+                            </div>
+                            <hr/>
                         </div>
                     </div>
                 </div>
 
-                <!-- Glossario -->
+            <!-- Glossario -->
                 <div id="glossario" class="container">
                     <div class="row">
                         <div class="col-md" style="margin-bottom: 3em">
@@ -121,7 +163,19 @@
                         </div>
                     </div>
                 </div>
-                <!--About-->
+
+            <!-- Fonti -->
+                <div id="fonti" class="container">
+                    <div class="row">
+                        <p>Per lo sviluppo della seguente codifica sono state utilizzate le seguenti fonti:</p>
+                        <ul>
+                            <li><a href="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html" target="_blank" class="text-decoration-none" style="color: black;">Diari <i style="font-size:12px" class="fa">&#xf08e;</i></a> di Emanuele Artom (1943-1944) prelevati dal sito del <a href="http://digital-library.cdec.it/cdec-web/" title="Centro di Documentazione Ebraica Contemporanea" target="_blank" class="text-decoration-none" style="color: black;">CDEC <i style="font-size:12px" class="fa">&#xf08e;</i></a></li>
+                            <li><a href="https://www.omeka.unito.it/omeka/files/original/d0264d2e5dc3b5a9fd66fa6ace6b36c8.pdf" target="_blank" class="text-decoration-none" style="color: black;">Trascrizione dei diari <i style="font-size:12px" class="fa">&#xf08e;</i></a> a cura di P. De Benedetti e E. Ravenna (CDEC, Milano, 1966)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <!-- About -->
                 <footer id="about" class="bg-dark" style="padding: 20px;">
                     <div style="color: white">
                         <div class="text-center">
@@ -161,14 +215,19 @@
         <!-- Template per divisione delle righe come nel manoscritto -->
             <xsl:template match="//t:lb">
                 <xsl:for-each select="current()">
-                    <br /><xsl:value-of select="//t:lb" />
+                    <xsl:value-of select="//t:lb" /><br />
                 </xsl:for-each>
             </xsl:template>
 
         <!-- Template per delete -->
             <xsl:template match="t:del">
                 <xsl:for-each select="current()">
-                        <span class="deleted text-decoration-line-through" style="display: none"><xsl:value-of select="current()" /></span> 
+                    <xsl:element name="span">
+                        <xsl:attribute name="class">deleted text-decoration-line-through</xsl:attribute>
+                        <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+                        <xsl:attribute name="style">display: none</xsl:attribute>
+                        <xsl:value-of select="current()" />
+                    </xsl:element>
                 </xsl:for-each>
             </xsl:template>
 
@@ -176,10 +235,20 @@
             <xsl:template match="t:add">
                 <xsl:choose>
                     <xsl:when test="@place='above'">
-                        <span class="add above" style="display: none"><xsl:value-of select="current()" /></span>
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">add above</xsl:attribute>
+                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+                            <xsl:value-of select="current()" />
+                        </xsl:element>
                     </xsl:when>
                     <xsl:when test="@place='between'">
-                        <span class="add between" style="display: inline-block"><xsl:value-of select="current()" /></span>
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">add between</xsl:attribute>
+                            <xsl:attribute name="style">display: inline-block</xsl:attribute>
+                            <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+                            <xsl:value-of select="current()" />
+                        </xsl:element>
                     </xsl:when>
                 </xsl:choose>
             </xsl:template>
@@ -188,22 +257,51 @@
             <xsl:template match="//t:subst">
                 <xsl:for-each select="current()">    
                     <xsl:if test="t:del">
-                        <span class="substA" style="display: inline-block"><xsl:value-of select="t:add" /></span>
-                        <span class="substD text-decoration-line-through" style="display: none"><xsl:value-of select="t:del" /></span>
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">substA</xsl:attribute>
+                            <xsl:attribute name="style">display: inline-block</xsl:attribute>
+                            <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+                            <xsl:value-of select="t:add" />
+                        </xsl:element>
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">substD text-decoration-line-through</xsl:attribute>
+                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:value-of select="t:del" />
+                        </xsl:element>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:template>
         
         <!-- Template per il choice -->
             <xsl:template match="//t:choice">
-                <xsl:if test="t:abbr">
-                    <span class="expansion" style="display: inline-block"><xsl:value-of select="t:expan" /></span>
-                    <span class="abbreviaton" style="display: none"><xsl:value-of select="t:abbr" /></span>
-                </xsl:if>
-                <xsl:if test="t:sic">
-                    <span class="correction" style="display: inline-block"><xsl:value-of select="t:corr" /></span>
-                    <span class="thus" style="display: none"><xsl:value-of select="t:sic" /></span>
-                </xsl:if>
+                <xsl:for-each select="current()">
+                    <xsl:if test="t:abbr">
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">expansion</xsl:attribute>
+                            <xsl:attribute name="style">display: inline-block</xsl:attribute>
+                            <xsl:attribute name="id"><xsl:value-of select="current()[@xml:id]" /></xsl:attribute>
+                            <xsl:value-of select="t:expan" />
+                        </xsl:element>
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">abbreviaton</xsl:attribute>
+                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:value-of select="t:abbr" />
+                        </xsl:element>
+                    </xsl:if>
+                    <xsl:if test="t:sic">
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">correction</xsl:attribute>
+                            <xsl:attribute name="style">display: inline-block</xsl:attribute>
+                            <xsl:attribute name="id"><xsl:value-of select="current()[@xml:id]" /></xsl:attribute>
+                            <xsl:value-of select="t:corr" />
+                        </xsl:element>
+                        <xsl:element name="span">
+                            <xsl:attribute name="class">thus</xsl:attribute>
+                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:value-of select="t:sic" />
+                        </xsl:element>
+                    </xsl:if>
+                </xsl:for-each>
             </xsl:template>
 
         <!-- Template per persone -->
@@ -255,7 +353,8 @@
                                 <xsl:attribute name="class">text-decoration-none</xsl:attribute>
                                 <xsl:attribute name="target">_blank</xsl:attribute>
                                 <xsl:attribute name="style">color: black</xsl:attribute>
-                                <xsl:value-of select="substring-before(current()//t:orgName,current()//t:date)" />
+                                <xsl:value-of select="substring-before(current()//t:orgName,current()//t:abbr)" />
+                                (<xsl:value-of select="current()//t:abbr" />)
                                 <i style="font-size:12px" class="fa">&#xf08e;</i>
                             </xsl:element>
                         </li>
@@ -263,8 +362,17 @@
                 </xsl:for-each>
             </xsl:template>
 
-
-    <!-- Completare con il JS e le visualizzazioni nelle immagini delle zone -->
+        <!-- Template gap -->
+            <xsl:template match="t:gap">
+                <xsl:for-each select="current()">
+                    <xsl:element name="span">
+                        <xsl:attribute name="class">gap</xsl:attribute>
+                        <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+                        <xsl:attribute name="style">display: none</xsl:attribute>
+                        ***
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:template>
 
 </xsl:stylesheet>
 

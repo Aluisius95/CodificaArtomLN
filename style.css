@@ -1,8 +1,12 @@
 #info-sinistra{
-    margin-left: -50px;
+    margin-left: -30px;
     margin-right: 10px; 
 }
 #info-destra{
     margin-left: 10px;
-    margin-right: -50px;
+    margin-right: -30px;
+}
+
+#glossario ul ,#fonti ul{
+    list-style-type: none;
 }
