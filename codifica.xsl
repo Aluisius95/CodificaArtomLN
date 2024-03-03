@@ -77,10 +77,7 @@
                             <span style="margin-right: 5%">Pagina 34</span>
                             <button type="button" class="btn btn-outline-dark" id="pg34D">Deleted</button>
                             <button type="button" class="btn btn-outline-dark" id="pg34A">Added</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg34S">Substitution</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg34C">Correction</button>
                             <button type="button" class="btn btn-outline-dark" id="pg34AB">Abbreviation</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg34G">Gap</button>
                         </div>
                         <div class="row">
                             <div class="col-sm image-container">
@@ -102,7 +99,6 @@
                             <button type="button" class="btn btn-outline-dark" id="pg35D">Deleted</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35A">Added</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35S">Substitution</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg35C">Correction</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35AB">Abbreviation</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35G">Gap</button>
                         </div>
@@ -124,11 +120,8 @@
                         <div class="col" style="padding: 3.5rem 0 2rem 0; margin-left: 20%">
                             <span style="margin-right: 5%">Pagina 36</span>
                             <button type="button" class="btn btn-outline-dark" id="pg36D">Deleted</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg36A">Added</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg36S">Substitution</button>
                             <button type="button" class="btn btn-outline-dark" id="pg36C">Correction</button>
                             <button type="button" class="btn btn-outline-dark" id="pg36AB">Abbreviation</button>
-                            <button type="button" class="btn btn-outline-dark" id="pg36G">Gap</button>
                         </div>
                         <div class="row">
                             <div class="col-sm image-container">
@@ -225,7 +218,7 @@
                     <xsl:element name="span">
                         <xsl:attribute name="class">deleted text-decoration-line-through</xsl:attribute>
                         <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
-                        <xsl:attribute name="style">display: none</xsl:attribute>
+                        <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                         <xsl:value-of select="current()" />
                     </xsl:element>
                 </xsl:for-each>
@@ -237,7 +230,7 @@
                     <xsl:when test="@place='above'">
                         <xsl:element name="span">
                             <xsl:attribute name="class">add above</xsl:attribute>
-                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
                             <xsl:value-of select="current()" />
                         </xsl:element>
@@ -265,7 +258,7 @@
                         </xsl:element>
                         <xsl:element name="span">
                             <xsl:attribute name="class">substD text-decoration-line-through</xsl:attribute>
-                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                             <xsl:value-of select="t:del" />
                         </xsl:element>
                     </xsl:if>
@@ -284,7 +277,7 @@
                         </xsl:element>
                         <xsl:element name="span">
                             <xsl:attribute name="class">abbreviaton</xsl:attribute>
-                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                             <xsl:value-of select="t:abbr" />
                         </xsl:element>
                     </xsl:if>
@@ -297,7 +290,7 @@
                         </xsl:element>
                         <xsl:element name="span">
                             <xsl:attribute name="class">thus</xsl:attribute>
-                            <xsl:attribute name="style">display: none</xsl:attribute>
+                            <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                             <xsl:value-of select="t:sic" />
                         </xsl:element>
                     </xsl:if>
