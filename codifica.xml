@@ -261,7 +261,7 @@
                 <body>
                     <pb n="34" facs="pages/pagina34.png" />
                     <ab xml:id="page34">
-                        <lb n="1" />Hanno una fede ed un <add place="above" xml:id="pg34_a1">&#39;<note>Possibile apostrofo</note></add> entusiasmo tutti
+                        <lb n="1" />Hanno una fede ed un <add place="above" xml:id="pg34_a1">&#39;</add> entusiasmo tutti
                         <lb n="2" /><hi style="font-variant: bold" xml:id="pg34_hi1">che li rende fanatici&#46; Non</hi> solo <unclear reason="faded" xml:id="pg34_u1">&#44;</unclear> sono
                         <lb n="3" />accurati nella pulizia<unclear reason="illegible" xml:id="pg34_u2">&#44;</unclear> non bestemmiano
                         <lb n="4" />quasi mai e <supplied reason="omitted-in-original" resp="#LN" xml:id="pg34_s1">sono</supplied> aperti alla cultura&#44; se

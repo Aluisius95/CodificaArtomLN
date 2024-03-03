@@ -46,9 +46,10 @@
                         </div>
                     </nav>
                 </header>
-                <!--Introduzione-->
+
+                <!-- Introduzione -->
                 <div class="container" style="padding: 5rem 0 0 0">
-                    <div class="text-center"><!--id="title" style="text-align:center"-->
+                    <div class="text-center">
                         <h2 class="text-uppercase"><xsl:value-of select="//t:titleStmt//t:title" /></h2>
                         <h3>Manoscritto di 
                             <a href="https://it.wikipedia.org/wiki/Emanuele_Artom" class="text-decoration-none" target="_blank" style="color: black; text-style: none">
@@ -63,9 +64,9 @@
                     </div>
                 </div>
 
-                <!--Pagine-->
+                <!-- Pagine -->
                 <div class="container" style="padding: 5rem 0">
-                    <div class="row" id="page34" style="padding: 5rem 0">
+                    <div class="row" id="page34" style="padding: 4rem 0">
                         <div class="col-sm image-container">
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
@@ -73,11 +74,11 @@
                                 </xsl:attribute>
                             </xsl:element>
                         </div>
-                        <div class="col-sm text font-monospace">
+                        <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
                             <xsl:apply-templates select="//t:text[@xml:id='page_34']" />
                         </div>
                     </div>
-                    <div class="row align-items-start" id="page35" style="padding: 5rem 0">
+                    <div class="row" id="page35" style="padding: 4rem 0">
                         <div class="col-sm image-container">
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
@@ -85,11 +86,11 @@
                                 </xsl:attribute>
                             </xsl:element>
                         </div>
-                        <div class="col-sm text font-monospace">
+                        <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
                             <xsl:apply-templates select="//t:text[@xml:id='page_35']" />
                         </div>
                     </div>
-                    <div class="row align-items-start" id="page36" style="padding: 5rem 0">
+                    <div class="row" id="page36" style="padding: 5rem 0">
                         <div class="col-sm image-container">
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
@@ -97,12 +98,30 @@
                                 </xsl:attribute>
                             </xsl:element>
                         </div>
-                        <div class="col-sm text font-monospace">
+                        <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
                             <xsl:apply-templates select="//t:text[@xml:id='page_36']" />
                         </div>
                     </div>
-                    <!--About-->
                 </div>
+
+                <!-- Glossario -->
+                <div id="glossario" class="container">
+                    <div class="row">
+                        <div class="col-md" style="margin-bottom: 3em">
+                            Nomi delle persone citate nel testo:
+                            <xsl:apply-templates select="//t:notesStmt//t:listPerson" />
+                        </div>
+                        <div class="col-md">
+                            Nomi delle organizzazioni citate nel testo:
+                            <xsl:apply-templates select="//t:notesStmt//t:listOrg" />
+                        </div>
+                        <div class="col-md">
+                            Nomi dei luoghi citati nel testo:
+                            <xsl:apply-templates select="//t:notesStmt//t:listPlace" />
+                        </div>
+                    </div>
+                </div>
+                <!--About-->
                 <footer id="about" class="bg-dark" style="padding: 20px;">
                     <div style="color: white">
                         <div class="text-center">
@@ -115,7 +134,7 @@
                                         Informazioni sull&#39;editore&#58;
                                     </p>
                                     <p>Testo codificato ed elaborato da</p>
-                                    <p><xsl:value-of select="//t:editionStmt/t:respStmt/t:persName/@ref"/></p>
+                                    <p><xsl:value-of select="t:editionStmt/t:respStmt/t:persName/t:ref/@target"/></p>
                                 </div>
                                 <div class="col-md text-center" id="info-centrale" style="padding: 10px">
                                     <p>
@@ -138,67 +157,112 @@
             </body>
         </html>
     </xsl:template>
+    <!-- Templates -->
+        <!-- Template per divisione delle righe come nel manoscritto -->
+            <xsl:template match="//t:lb">
+                <xsl:for-each select="current()">
+                    <br /><xsl:value-of select="//t:lb" />
+                </xsl:for-each>
+            </xsl:template>
 
-    <!-- Template per divisione delle righe come nel manoscritto -->
-    <xsl:template match="//t:lb">
-        <xsl:for-each select="current()">
-            <xsl:value-of select="//t:lb" /><br />
-        </xsl:for-each>
-    </xsl:template>
+        <!-- Template per delete -->
+            <xsl:template match="t:del">
+                <xsl:for-each select="current()">
+                        <span class="deleted text-decoration-line-through" style="display: none"><xsl:value-of select="current()" /></span> 
+                </xsl:for-each>
+            </xsl:template>
 
-    <!-- Template per delete -->
-    <xsl:template match="t:del">
-        <xsl:for-each select="current()">
-                <span class="deleted text-decoration-line-through" style="display: none"><xsl:value-of select="current()" /></span> 
-        </xsl:for-each>
-    </xsl:template>
+        <!-- Template per add extra-->
+            <xsl:template match="t:add">
+                <xsl:choose>
+                    <xsl:when test="@place='above'">
+                        <span class="add above" style="display: none"><xsl:value-of select="current()" /></span>
+                    </xsl:when>
+                    <xsl:when test="@place='between'">
+                        <span class="add between" style="display: inline-block"><xsl:value-of select="current()" /></span>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:template>
 
-    <!-- Template per add extra-->
-    <xsl:template match="t:add">
-        <xsl:choose>
-            <xsl:when test="@place='above'">
-                <span class="add above" style="display: none"><xsl:value-of select="current()" /></span>
-            </xsl:when>
-            <xsl:when test="@place='between'">
-                <span class="add between" style="display: inline-block"><xsl:value-of select="current()" /></span>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
+        <!-- Template per le sostituzioni -->
+            <xsl:template match="//t:subst">
+                <xsl:for-each select="current()">    
+                    <xsl:if test="t:del">
+                        <span class="substA" style="display: inline-block"><xsl:value-of select="t:add" /></span>
+                        <span class="substD text-decoration-line-through" style="display: none"><xsl:value-of select="t:del" /></span>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:template>
+        
+        <!-- Template per il choice -->
+            <xsl:template match="//t:choice">
+                <xsl:if test="t:abbr">
+                    <span class="expansion" style="display: inline-block"><xsl:value-of select="t:expan" /></span>
+                    <span class="abbreviaton" style="display: none"><xsl:value-of select="t:abbr" /></span>
+                </xsl:if>
+                <xsl:if test="t:sic">
+                    <span class="correction" style="display: inline-block"><xsl:value-of select="t:corr" /></span>
+                    <span class="thus" style="display: none"><xsl:value-of select="t:sic" /></span>
+                </xsl:if>
+            </xsl:template>
 
-    <!-- Template per le sostituzioni -->
-    <xsl:template match="//t:subst">
-        <xsl:for-each select="current()">    
-            <xsl:if test="t:del">
-                <span class="substA" style="display: inline-block"><xsl:value-of select="t:add" /></span>
-                <span class="substD text-decoration-line-through" style="display: none"><xsl:value-of select="t:del" /></span>
-            </xsl:if>
-        </xsl:for-each>
-    </xsl:template>
-    
-    <!-- Template per il choice -->
-    <xsl:template match="//t:choice">
-        <xsl:if test="t:abbr">
-            <span class="expansion" style="display: inline-block"><xsl:value-of select="t:expan" /></span>
-            <span class="abbreviaton" style="display: none"><xsl:value-of select="t:abbr" /></span>
-        </xsl:if>
-        <xsl:if test="t:sic">
-            <span class="correction" style="display: inline-block"><xsl:value-of select="t:corr" /></span>
-            <span class="thus" style="display: none"><xsl:value-of select="t:sic" /></span>
-        </xsl:if>
-    </xsl:template>
+        <!-- Template per persone -->
+            <xsl:template match="//t:notesStmt//t:person">
+                <xsl:for-each select="current()">
+                    <xsl:element name="ul">
+                        <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                        <xsl:choose>
+                            <xsl:when test="current()//t:addName">
+                                <li><xsl:value-of select="substring-before(current()//t:persName,current()//t:addName)" />
+                                (<xsl:value-of select="current()//t:addName"/>)</li>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <li><xsl:value-of select="current()//t:persName" /></li>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:template>
 
-    <!-- Template per le note -->
-    <xsl:template match="//t:ab//t:note">
-        <span class="note" style="display: none"><xsl:value-of select="//t:ab//t:note" /></span>
-    </xsl:template>
+        <!-- Template per luoghi -->
+            <xsl:template match="//t:notesStmt//t:place">
+                <xsl:for-each select="current()">
+                    <xsl:element name="ul">
+                        <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                        <li>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href"><xsl:value-of select="current()//t:settlement/@ref" /></xsl:attribute>
+                                <xsl:attribute name="class">text-decoration-none</xsl:attribute>
+                                <xsl:attribute name="target">_blank</xsl:attribute>
+                                <xsl:attribute name="style">color: black</xsl:attribute>
+                                <xsl:value-of select="current()//t:settlement" />
+                                (<xsl:value-of select="current()//t:region" />)
+                                <i style="font-size:12px" class="fa">&#xf08e;</i>
+                            </xsl:element>
+                        </li>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:template>
 
-    <!-- Template per persone -->
+        <!-- Template per organizzazioni -->
+            <xsl:template match="//t:notesStmt//t:org">
+                <xsl:for-each select="current()">
+                    <xsl:element name="ul">
+                        <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                        <li>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href"><xsl:value-of select="current()//t:orgName/@ref" /></xsl:attribute>
+                                <xsl:attribute name="class">text-decoration-none</xsl:attribute>
+                                <xsl:attribute name="target">_blank</xsl:attribute>
+                                <xsl:attribute name="style">color: black</xsl:attribute>
+                                <xsl:value-of select="substring-before(current()//t:orgName,current()//t:date)" />
+                                <i style="font-size:12px" class="fa">&#xf08e;</i>
+                            </xsl:element>
+                        </li>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:template>
 
-    <!-- Template per luoghi -->
-
-    <!-- Template per organizzazioni -->
-
-    <!-- Documentazioni consultate -->
 
     <!-- Completare con il JS e le visualizzazioni nelle immagini delle zone -->
 
