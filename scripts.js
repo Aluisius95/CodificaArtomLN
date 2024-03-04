@@ -40,11 +40,18 @@ $(document).ready(function(){
                 break;
             }
             case("pg34H"):{
-                if($("#page34").find("#pg34_hi1").attr("style") == ""){
+                if($("#page34").find("#pg34_hi1").attr("style") == "")
                     $("#page34").find("#pg34_hi1").attr("style","font-weight: bold;");
-                } else {
+                else
                     $("#page34").find("#pg34_hi1").attr("style","");
-                }
+
+                break;
+            }
+            case("pg34U"):{
+                if ($("#page34").find(".unclear").attr("style") == "")
+                    $("#page34").find(".unclear").attr("style", "filter: blur(1px);")
+                else
+                    $("#page34").find(".unclear").attr("style", "")
                 break;
             }
             case("pg34AB"):{
@@ -93,6 +100,13 @@ $(document).ready(function(){
                 }
                 break;
             }
+            case("pg35U"):{
+                if ($("#page35").find(".unclear").attr("style") == "")
+                    $("#page35").find(".unclear").attr("style", "filter: blur(1px);")
+                else
+                    $("#page35").find(".unclear").attr("style", "")
+                break;
+            }
             case("pg35FT"):{
                 if($("#page35").find("#pg35_ft").attr("style") == ""){
                     $("#page35").find("#pg35_ft").attr("style","color: green");
@@ -125,6 +139,13 @@ $(document).ready(function(){
                     $("#page36").find(".correction").attr("style","display: inline-block");
                     $("#page36").find(".thus").attr("style","display: none; color: red");
                 }
+                break;
+            }
+            case("pg36U"):{
+                if ($("#page36").find(".unclear").attr("style") == "")
+                    $("#page36").find(".unclear").attr("style", "filter: blur(1px);")
+                else
+                    $("#page36").find(".unclear").attr("style", "")
                 break;
             }
             case("pg36AB"):{
