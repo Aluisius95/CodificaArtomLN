@@ -155,7 +155,10 @@
                 </div>
 
             <!-- Glossario -->
-                <div id="glossario" class="container">
+                <div id="glossario" class="container" style="padding-top: 30px">
+                <br/>
+                Glossario: 
+                <br/>
                     <div class="row">
                         <div class="col-md" style="margin-bottom: 3em">
                             Nomi delle persone citate nel testo:
