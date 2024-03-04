@@ -80,6 +80,7 @@
                             <li>Correction: sostituirà il termine scritto correttamente con la forma originale. Esempio: Murello- <span style="color:red">Morello</span></li>
                             <li>Substitution: sostituirà il termine finale con ciò che era scritto inizialmente. Esempio: aggiunse - <span class="text-decoration-line-through" style="color: red">osservò</span></li>
                             <li>Gap: inserirà degli asterischi dove è presente un elemento totalmente illegibile. Esempio: <span style="font-style: italic">elemento non leggibile</span> - <span style="color: red">***</span></li>
+                            <li>FloatingText: evidenzierà il testo aggiunto lateralmente. Esempio: Luigi osservò - <span style="color: green">Luigi osservò</span></li>
                         </ul>
                     </div>
                     <div id="page34">
