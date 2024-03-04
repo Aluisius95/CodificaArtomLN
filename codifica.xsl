@@ -186,7 +186,11 @@
                                         Informazioni sull&#39;editore&#58;
                                     </p>
                                     <p>Testo codificato ed elaborato da</p>
-                                    <p><xsl:value-of select="t:editionStmt/t:respStmt/t:persName/t:ref/@target"/></p>
+                                    <p><xsl:value-of select="//t:titleStmt//t:persName[@xml:id='LN']" /> (numero di matricola 567026)</p>
+                                    <p>Contatti personali: <br/>
+                                       l dot noto1 at studenti dot unipi dot it <br/>
+                                       luigi dot noto1995 at gmail dot com    
+                                    </p>
                                 </div>
                                 <div class="col-md text-center" id="info-centrale" style="padding: 10px">
                                     <p>
@@ -201,6 +205,7 @@
                                     <p class="text-center">Informazioni sulla serie&#58;</p>
                                     <p><xsl:value-of select="//t:seriesStmt/t:title"/></p>
                                     <p><xsl:value-of select="//t:seriesStmt/t:respStmt"/></p>
+                                    <p>Anno accademico 2022/2023</p>
                                 </div>
                             </div>
                         </div>
