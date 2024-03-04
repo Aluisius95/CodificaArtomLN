@@ -29,9 +29,24 @@
          </div>
       </div>
       <div class="container" style="padding: 3rem 0">
-         <div class="text-center">
+         <div style="padding-left: 10%">
             <p>Tramite i pulsanti presenti sopra ogni pagina, potranno essere visualizzati i vari
-               elementi.</p>
+               elementi come mostrato nella leggenda</p>
+            <ul>
+               <li>Deleted: mostra gli elementi cancellati e non visibili nel testo. Esempio: <span style="filter: blur(2.5px)">Lui</span> - <span class="text-decoration-line-through" style="color: red">Lui</span></li>
+               <li>Added: mostra gli elementi aggiunti all'interno del testo. Esempio: <span style="filter: blur(2.5px)">più scettici</span> - <span style="color: red">più scettici</span></li>
+               <li>Highlighted: rende in grassetto laddove lo è nel testo. Esempio: Non - <span style="font-weight: bolder">Non</span></li>
+               <li>Unclear: applicherà un effetto sbiadito agli elementi non leggibili perché sbiaditi
+                  o sovrascritti. Esempio: Sappiamo - <span style="filter: blur(1.5px)">Sappi</span>amo</li>
+               <li>Abbreviation: sostituirà il termine scritto per esteso con l'abbreviazione nel testo.
+                  Esempio: Partito d'Azione - <span style="color:red">P.d'A.</span></li>
+               <li>Correction: sostituirà il termine scritto correttamente con la forma originale. Esempio:
+                  Murello- <span style="color:red">Morello</span></li>
+               <li>Substitution: sostituirà il termine finale con ciò che era scritto inizialmente. Esempio:
+                  aggiunse - <span class="text-decoration-line-through" style="color: red">osservò</span></li>
+               <li>Gap: inserirà degli asterischi dove è presente un elemento totalmente illegibile.
+                  Esempio: <span style="font-style: italic">elemento non leggibile</span> - <span style="color: red">***</span></li>
+            </ul>
          </div>
          <div id="page34">
             <div class="col" style="padding: 3.5rem 0 2rem 0; margin-left: 20%"><span style="margin-right: 5%">Pagina 34</span><button type="button" class="btn btn-outline-dark" id="pg34D">Deleted</button><button type="button" class="btn btn-outline-dark" id="pg34A">Added</button><button type="button" class="btn btn-outline-dark" id="pg34H">Highlighted</button><button type="button" class="btn btn-outline-dark" id="pg34U">Unclear</button><button type="button" class="btn btn-outline-dark" id="pg34AB">Abbreviation</button></div>
