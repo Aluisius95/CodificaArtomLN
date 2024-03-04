@@ -77,6 +77,7 @@
                             <span style="margin-right: 5%">Pagina 34</span>
                             <button type="button" class="btn btn-outline-dark" id="pg34D">Deleted</button>
                             <button type="button" class="btn btn-outline-dark" id="pg34A">Added</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg34H">Highlighted</button>
                             <button type="button" class="btn btn-outline-dark" id="pg34AB">Abbreviation</button>
                         </div>
                         <div class="row">
@@ -87,7 +88,7 @@
                                     </xsl:attribute>
                                 </xsl:element>
                             </div>
-                            <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
+                            <div class="col-sm text" style="height: 708px; overflow-y: scroll;">
                                 <xsl:apply-templates select="//t:text[@xml:id='page_34']" />
                             </div>
                             <hr/>
@@ -100,6 +101,7 @@
                             <button type="button" class="btn btn-outline-dark" id="pg35A">Added</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35S">Substitution</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35AB">Abbreviation</button>
+                            <button type="button" class="btn btn-outline-dark" id="pg35FT">Floating Text</button>
                             <button type="button" class="btn btn-outline-dark" id="pg35G">Gap</button>
                         </div>
                         <div class="row">
@@ -222,6 +224,15 @@
                         <xsl:value-of select="current()" />
                     </xsl:element>
                 </xsl:for-each>
+            </xsl:template>
+
+        <!-- Template per highlighted -->
+            <xsl:template match="t:hi">
+                <xsl:element name="span">
+                    <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                    <xsl:attribute name="style"></xsl:attribute>
+                    <xsl:value-of select="current()"/>
+                </xsl:element>
             </xsl:template>
 
         <!-- Template per add extra-->
@@ -361,10 +372,19 @@
                     <xsl:element name="span">
                         <xsl:attribute name="class">gap</xsl:attribute>
                         <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
-                        <xsl:attribute name="style">display: none</xsl:attribute>
+                        <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                         ***
                     </xsl:element>
                 </xsl:for-each>
+            </xsl:template>
+
+        <!-- Template Floating Text -->
+            <xsl:template match="t:floatingText">
+                <xsl:element name="span">
+                    <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                    <xsl:attribute name="style"></xsl:attribute>
+                    <xsl:value-of select="current()" />
+                </xsl:element>
             </xsl:template>
 
 </xsl:stylesheet>

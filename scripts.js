@@ -39,6 +39,14 @@ $(document).ready(function(){
                 }
                 break;
             }
+            case("pg34H"):{
+                if($("#page34").find("#pg34_hi1").attr("style") == ""){
+                    $("#page34").find("#pg34_hi1").attr("style","font-weight: bold;");
+                } else {
+                    $("#page34").find("#pg34_hi1").attr("style","");
+                }
+                break;
+            }
             case("pg34AB"):{
                 if($("#page34").find(".abbreviaton").attr("style") == "display: none; color: red"){
                     $("#page34").find(".expansion").attr("style","display: none");
@@ -82,6 +90,14 @@ $(document).ready(function(){
                 } else {
                     $("#page35").find(".expansion").attr("style","display: inline-block");
                     $("#page35").find(".abbreviaton").attr("style","display: none; color: red");
+                }
+                break;
+            }
+            case("pg35FT"):{
+                if($("#page35").find("#pg35_ft").attr("style") == ""){
+                    $("#page35").find("#pg35_ft").attr("style","color: green");
+                } else {
+                    $("#page35").find("#pg35_ft").attr("style","");
                 }
                 break;
             }
