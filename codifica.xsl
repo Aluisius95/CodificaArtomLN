@@ -61,8 +61,7 @@
                             </a>
                         </h3>
                         <p>
-                            <xsl:value-of select="//t:titleStmt//t:resp" />&#58;<br />
-                            <xsl:value-of select="//t:titleStmt//t:persName[@xml:id='LN']" />
+                            <xsl:value-of select="//t:titleStmt//t:resp" />&#32; <xsl:value-of select="//t:titleStmt//t:persName[@xml:id='LN']" />
                         </p>
                     </div>
                 </div>

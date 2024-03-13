@@ -190,68 +190,68 @@
     <facsimile>
         <surface>
             <graphic xml:id="img34" url='pages/pagina34.png' width='510px' height='708px' />
-            <zone ulx="289" uly="21" lrx="300" lry="32" ref="#pg34_a1"/>
-            <zone ulx="33" uly="48" lrx="328" lry="77" ref="#pg34_hi1"/>
-            <zone ulx="381" uly="64" lrx="389" lry="78" ref="#pg34_u1"/>
-            <zone ulx="279" uly="90" lrx="291" lry="106" ref="#pg34_u2"/>
-            <zone ulx="163" uly="103" lrx="245" lry="125" ref="#pg34_s1"/>
-            <zone ulx="343" uly="164" lrx="447" lry="193" ref="#CP"/>
-            <zone ulx="342" uly="192" lrx="418" lry="218" ref="#A660"/>
-            <zone ulx="154" uly="254" lrx="211" lry="283" ref="#LB"/>
-            <zone ulx="321" uly="307" lrx="387" lry="332" ref="#GM"/>
-            <zone ulx="294" uly="405" lrx="331" lry="434" ref="#pg34_d1"/>
-            <zone ulx="74" uly="439" lrx="100" lry="466" ref="#GS"/>
-            <zone ulx="316" uly="457" lrx="364" lry="482" ref="#pg34_u3"/>
-            <zone ulx="193" uly="493" lrx="304" lry="505" ref="#pg34_a2"/>
-            <zone ulx="294" uly="541" lrx="370" lry="568" ref="#PdA"/>
+            <zone ulx="289" uly="21" lrx="300" lry="32" corresp="#pg34_a1"/>
+            <zone ulx="33" uly="48" lrx="328" lry="77" corresp="#pg34_hi1"/>
+            <zone ulx="381" uly="64" lrx="389" lry="78" corresp="#pg34_u1"/>
+            <zone ulx="279" uly="90" lrx="291" lry="106" corresp="#pg34_u2"/>
+            <zone ulx="163" uly="103" lrx="245" lry="125" corresp="#pg34_s1"/>
+            <zone ulx="343" uly="164" lrx="447" lry="193" corresp="#CP"/>
+            <zone ulx="342" uly="192" lrx="418" lry="218" corresp="#A660"/>
+            <zone ulx="154" uly="254" lrx="211" lry="283" corresp="#LB"/>
+            <zone ulx="321" uly="307" lrx="387" lry="332" corresp="#GM"/>
+            <zone ulx="294" uly="405" lrx="331" lry="434" corresp="#pg34_d1"/>
+            <zone ulx="74" uly="439" lrx="100" lry="466" corresp="#GS"/>
+            <zone ulx="316" uly="457" lrx="364" lry="482" corresp="#pg34_u3"/>
+            <zone ulx="193" uly="493" lrx="304" lry="505" corresp="#pg34_a2"/>
+            <zone ulx="294" uly="541" lrx="370" lry="568" corresp="#PdA"/>
         </surface>
         <surface>
             <graphic xml:id="img35" url='pages/pagina35.png' width='510px' height='708px' />
-            <zone ulx="86" uly="41" lrx="103" lry="57" ref="#pg35_u1"/>
-            <zone ulx="423" uly="40" lrx="443" lry="54" ref="#pg35_u2"/>
-            <zone ulx="386" uly="65" lrx="399" lry="78" ref="#pg35_u3"/>
-            <zone ulx="126" uly="121" lrx="206" lry="143" ref="#pg35_d1"/>
-            <zone ulx="264" uly="127" lrx="276" lry="139" ref="#pg35_u4"/>
-            <zone ulx="122" uly="169" lrx="134" lry="181" ref="#pg35_a1"/>
-            <zone ulx="292" uly="165" lrx="335" lry="179" ref="#pg35_abbr1"/>
-            <zone ulx="29" uly="347" lrx="59" lry="364" ref="#pg35_gap1"/>
-            <zone ulx="125" uly="384" lrx="165" lry="404" ref="#pg35_d2"/>
-            <zone ulx="66" uly="408" lrx="127" lry="428" ref="#PB"/>
-            <zone ulx="34" uly="462" lrx="51" lry="476" ref="#pg35_u5"/>
-            <zone ulx="167" uly="448" lrx="213" lry="468" ref="#pg35_sub1"/>
-            <zone ulx="185" uly="493" lrx="229" lry="514" ref="#GM"/>
-            <zone ulx="454" uly="331" lrx="499" lry="599" ref="#pg35_ft"/>
-            <zone ulx="478" uly="338" lrx="493" lry="369" ref="#LB"/>
-            <zone ulx="415" uly="487" lrx="462" lry="507" ref="#GM"/>
-            <zone ulx="31" uly="516" lrx="99" lry="536" ref="#pg35_sub2"/>
-            <zone ulx="357" uly="516" lrx="397" lry="529" ref="#pg35_d3"/>
-            <zone ulx="368" uly="551" lrx="473" lry="577" ref="#pg35_sub3"/>
-            <zone ulx="13" uly="575" lrx="221" lry="585" ref="#pg35_a2"/>
-            <zone ulx="16" uly="590" lrx="42" lry="603" ref="#pg35_a3"/>
-            <zone ulx="76" uly="590" lrx="90" lry="604" ref="#pg35_gap2"/>
-            <zone ulx="466" uly="576" lrx="484" lry="596" ref="#pg35_u6"/>
-            <zone ulx="148" uly="626" lrx="170" lry="644" ref="#pg35_sub4"/>
-            <zone ulx="424" uly="615" lrx="487" lry="643" ref="#GS"/>
-            <zone ulx="325" uly="638" lrx="389" lry="661" ref="#pg35_gap3"/>
+            <zone ulx="86" uly="41" lrx="103" lry="57" corresp="#pg35_u1"/>
+            <zone ulx="423" uly="40" lrx="443" lry="54" corresp="#pg35_u2"/>
+            <zone ulx="386" uly="65" lrx="399" lry="78" corresp="#pg35_u3"/>
+            <zone ulx="126" uly="121" lrx="206" lry="143" corresp="#pg35_d1"/>
+            <zone ulx="264" uly="127" lrx="276" lry="139" corresp="#pg35_u4"/>
+            <zone ulx="122" uly="169" lrx="134" lry="181" corresp="#pg35_a1"/>
+            <zone ulx="292" uly="165" lrx="335" lry="179" corresp="#pg35_abbr1"/>
+            <zone ulx="29" uly="347" lrx="59" lry="364" corresp="#pg35_gap1"/>
+            <zone ulx="125" uly="384" lrx="165" lry="404" corresp="#pg35_d2"/>
+            <zone ulx="66" uly="408" lrx="127" lry="428" corresp="#PB"/>
+            <zone ulx="34" uly="462" lrx="51" lry="476" corresp="#pg35_u5"/>
+            <zone ulx="167" uly="448" lrx="213" lry="468" corresp="#pg35_sub1"/>
+            <zone ulx="185" uly="493" lrx="229" lry="514" corresp="#GM"/>
+            <zone ulx="454" uly="331" lrx="499" lry="599" corresp="#pg35_ft"/>
+            <zone ulx="478" uly="338" lrx="493" lry="369" corresp="#LB"/>
+            <zone ulx="415" uly="487" lrx="462" lry="507" corresp="#GM"/>
+            <zone ulx="31" uly="516" lrx="99" lry="536" corresp="#pg35_sub2"/>
+            <zone ulx="357" uly="516" lrx="397" lry="529" corresp="#pg35_d3"/>
+            <zone ulx="368" uly="551" lrx="473" lry="577" corresp="#pg35_sub3"/>
+            <zone ulx="13" uly="575" lrx="221" lry="585" corresp="#pg35_a2"/>
+            <zone ulx="16" uly="590" lrx="42" lry="603" corresp="#pg35_a3"/>
+            <zone ulx="76" uly="590" lrx="90" lry="604" corresp="#pg35_gap2"/>
+            <zone ulx="466" uly="576" lrx="484" lry="596" corresp="#pg35_u6"/>
+            <zone ulx="148" uly="626" lrx="170" lry="644" corresp="#pg35_sub4"/>
+            <zone ulx="424" uly="615" lrx="487" lry="643" corresp="#GS"/>
+            <zone ulx="325" uly="638" lrx="389" lry="661" corresp="#pg35_gap3"/>
         </surface>
         <surface>
             <graphic xml:id="img36" url='pages/pagina36.png' width='510px' height='708px' />
-            <zone ulx="29" uly="30" lrx="59" lry="47" ref="#pg36_d1"/>
-            <zone ulx="48" uly="83" lrx="67" lry="97" ref="#pg36_u1"/>
-            <zone ulx="280" uly="76" lrx="358" lry="96" ref="#pg36_d2"/>
-            <zone ulx="50" uly="147" lrx="144" lry="167" ref="#pg36_c1"/>
-            <zone ulx="188" uly="148" lrx="266" lry="166" ref="#F811"/>
-            <zone ulx="61" uly="170" lrx="105" lry="190" ref="#LJ"/>
-            <zone ulx="362" uly="184" lrx="390" lry="195" ref="#pg36_ag"/>
-            <zone ulx="317" uly="210" lrx="376" lry="235" ref="#GM"/>
-            <zone ulx="351" uly="400" lrx="376" lry="419" ref="#pg36_u2"/>
-            <zone ulx="373" uly="428" lrx="393" lry="442" ref="#pg36_c2"/>
-            <zone ulx="95" uly="448" lrx="229" lry="469" ref="#pg36_d3"/>
-            <zone ulx="202" uly="492" lrx="272" lry="515" ref="#PdA"/>
-            <zone ulx="25" uly="582" lrx="94" lry="604" ref="#VG"/>
-            <zone ulx="28" uly="603" lrx="78" lry="626" ref="#pg36_c3"/>
-            <zone ulx="312" uly="620" lrx="384" lry="640" ref="#PdA"/>
-            <zone ulx="174" uly="671" lrx="217" lry="689" ref="#pg36_c4"/>
+            <zone ulx="29" uly="30" lrx="59" lry="47" corresp="#pg36_d1"/>
+            <zone ulx="48" uly="83" lrx="67" lry="97" corresp="#pg36_u1"/>
+            <zone ulx="280" uly="76" lrx="358" lry="96" corresp="#pg36_d2"/>
+            <zone ulx="50" uly="147" lrx="144" lry="167" corresp="#pg36_c1"/>
+            <zone ulx="188" uly="148" lrx="266" lry="166" corresp="#F811"/>
+            <zone ulx="61" uly="170" lrx="105" lry="190" corresp="#LJ"/>
+            <zone ulx="362" uly="184" lrx="390" lry="195" corresp="#pg36_ag"/>
+            <zone ulx="317" uly="210" lrx="376" lry="235" corresp="#GM"/>
+            <zone ulx="351" uly="400" lrx="376" lry="419" corresp="#pg36_u2"/>
+            <zone ulx="373" uly="428" lrx="393" lry="442" corresp="#pg36_c2"/>
+            <zone ulx="95" uly="448" lrx="229" lry="469" corresp="#pg36_d3"/>
+            <zone ulx="202" uly="492" lrx="272" lry="515" corresp="#PdA"/>
+            <zone ulx="25" uly="582" lrx="94" lry="604" corresp="#VG"/>
+            <zone ulx="28" uly="603" lrx="78" lry="626" corresp="#pg36_c3"/>
+            <zone ulx="312" uly="620" lrx="384" lry="640" corresp="#PdA"/>
+            <zone ulx="174" uly="671" lrx="217" lry="689" corresp="#pg36_c4"/>
         </surface>
     </facsimile>
     <text xml:lang="it">
@@ -300,7 +300,7 @@
                         <lb n="3" />societ&#224; apparivano a <persName>Marco Aurelio</persName><unclear reason="illegible" agent="overwrite" xml:id="pg35_u3">&#44;</unclear> a <persName>Lu&#61;
                         <lb break="no" n="4" />ciano</persName>&#44; ad <persName>Apollonio di <settlement>Tiana</settlement></persName>&#44; a <persName>Giuliano</persName>
                         <lb n="5" />come a <persName>Tertulliano</persName>&#44; ad <persName>Agostino</persName>&#44; ai <orgName>martiri
-                        <lb n="6" />del Circo</orgName>&#46; <del rend="overstrike" xml:id="pg35_d1">Ero che</del> La m<c><unclear reason="illegible" agent="overwrite" xml:id="pg35_u4">i</unclear></c>a mentalit&#224; &#232; come
+                        <lb n="6" />del Circo</orgName>&#46; <del rend="overstrike" xml:id="pg35_d1">Ero che</del> La m<unclear reason="illegible" agent="overwrite" xml:id="pg35_u4"><c>i</c></unclear>a mentalit&#224; &#232; come
                         <lb n="7" />quella degli eredi della lunga tradizione
                         <lb n="8" />letteraria <add place="between" xml:id="pg35_a1">e</add> storica&#44; mentre i <orgName xml:id="pg35_abbr1"><choice><abbr>com</abbr><expan>comunisti</expan></choice></orgName> sono come i
                         <lb n="9" />Cristiani&#59; conoscono la folla da cui pro&#61;
