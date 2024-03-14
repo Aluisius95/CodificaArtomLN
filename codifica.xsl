@@ -404,7 +404,6 @@
                     <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
                     <xsl:attribute name="class">zone</xsl:attribute>
                     <xsl:attribute name="style"></xsl:attribute>
-                    <!--<xsl:value-of select="current()" />-->
                     <xsl:apply-templates />
                 </xsl:element>
             </xsl:template>
