@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text-css" href="style.css"?>
-<xsl:stylesheet version="2.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:t="http://www.tei-c.org/ns/1.0"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"  
->
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:t="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
     <xsl:template match="/">
@@ -69,17 +65,21 @@
             <!-- Pagine -->
                 <div class="container" style="padding: 3rem 0">
                     <div style="padding-left: 10%">
-                        <p>Tramite i pulsanti presenti sopra ogni pagina, potranno essere visualizzati i vari elementi come mostrato nella leggenda</p>
+                        <p>Tramite i pulsanti presenti sopra ogni pagina, potranno essere visualizzati i vari elementi come mostrato nella leggenda.<br/>
+                        Passando il puntatore sopra i dettagli delle immagini, si potrà: <br/>
+                         - visualizzare a quale categoria fa parte, scritta nel formato <i>#pg**_type*</i><br />
+                         - visualizzare le iniziali di persona, associazione o codice catastale
+                        </p>
                         <ul>
-                            <li>Deleted: mostra gli elementi cancellati e non visibili nel testo. Esempio: <span style="filter: blur(2.5px)">Lui</span> - <span class="text-decoration-line-through" style="color: red">Lui</span></li>
-                            <li>Added: mostra gli elementi aggiunti all'interno del testo. Esempio: <span style="filter: blur(2.5px)">più scettici</span> - <span style="color: red">più scettici</span></li>
-                            <li>Highlighted: rende in grassetto laddove lo è nel testo. Esempio: Non - <span style="font-weight: bolder">Non</span></li>
-                            <li>Unclear: applicherà un effetto sbiadito agli elementi non leggibili perché sbiaditi o sovrascritti. Esempio: Sappiamo - <span style="filter: blur(1.5px)">Sappi</span>amo</li>
-                            <li>Abbreviation: sostituirà il termine scritto per esteso con l'abbreviazione nel testo. Esempio: Partito d'Azione - <span style="color:red">P.d'A.</span></li>
-                            <li>Correction: sostituirà il termine scritto correttamente con la forma originale. Esempio: Murello- <span style="color:red">Morello</span></li>
-                            <li>Substitution: sostituirà il termine finale con ciò che era scritto inizialmente. Esempio: aggiunse - <span class="text-decoration-line-through" style="color: red">osservò</span></li>
-                            <li>Gap: inserirà degli asterischi dove è presente un elemento totalmente illegibile. Esempio: <span style="font-style: italic">elemento non leggibile</span> - <span style="color: red">***</span></li>
-                            <li>FloatingText: evidenzierà il testo aggiunto lateralmente. Esempio: Luigi osservò - <span style="color: green">Luigi osservò</span></li>
+                            <li>Deleted <b>(#pg**_d*)</b>: mostra gli elementi cancellati e non visibili nel testo. Esempio: <span style="filter: blur(2.5px)">Lui</span> - <span class="text-decoration-line-through" style="color: red">Lui</span></li>
+                            <li>Added <b>(#pg**_a*)</b>: mostra gli elementi aggiunti all'interno del testo. Esempio: <span style="filter: blur(2.5px)">più scettici</span> - <span style="color: red">più scettici</span></li>
+                            <li>Highlighted <b>(#pg**_hi*)</b>: rende in grassetto laddove lo è nel testo. Esempio: Non - <span style="font-weight: bolder">Non</span></li>
+                            <li>Unclear <b>(#pg**_u*)</b>: applicherà un effetto sbiadito agli elementi non leggibili perché sbiaditi o sovrascritti. Esempio: Sappiamo - <span style="filter: blur(1.5px)">Sappi</span>amo</li>
+                            <li>Abbreviation <b>(#pg**_c*)</b>: sostituirà il termine scritto per esteso con l'abbreviazione nel testo. Esempio: Partito d'Azione - <span style="color:red">P.d'A.</span></li>
+                            <li>Correction <b>(#pg**_c*)</b>: sostituirà il termine scritto correttamente con la forma originale. Esempio: Murello- <span style="color:red">Morello</span></li>
+                            <li>Substitution <b>(#pg**_sub*)</b>: sostituirà il termine finale con ciò che era scritto inizialmente. Esempio: aggiunse - <span class="text-decoration-line-through" style="color: red">osservò</span></li>
+                            <li>Gap <b>(#pg**_gap*)</b>: inserirà degli asterischi dove è presente un elemento totalmente illegibile. Esempio: <span style="font-style: italic">elemento non leggibile</span> - <span style="color: red">***</span></li>
+                            <li>FloatingText <b>(#pg**_ft*)</b>: evidenzierà il testo aggiunto lateralmente. Esempio: Luigi osservò - <span style="color: green">Luigi osservò</span></li>
                         </ul>
                     </div>
                     <div id="page34">
@@ -93,11 +93,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm image-container">
-                                <xsl:element name="img">
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="//t:graphic[@xml:id='img34']/@url"/>
-                                    </xsl:attribute>
-                                </xsl:element>
+                                <xsl:apply-templates select="//t:surface[@xml:id='img34']" />
                             </div>
                             <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
                                 <xsl:apply-templates select="//t:text[@xml:id='page_34']" />
@@ -118,11 +114,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm image-container">
-                                <xsl:element name="img">
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="//t:graphic[@xml:id='img35']/@url"/>
-                                    </xsl:attribute>
-                                </xsl:element>
+                                <xsl:apply-templates select="//t:surface[@xml:id='img35']" />
                             </div>
                             <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
                                 <xsl:apply-templates select="//t:text[@xml:id='page_35']" />
@@ -140,11 +132,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm image-container">
-                                <xsl:element name="img">
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="//t:graphic[@xml:id='img36']/@url"/>
-                                    </xsl:attribute>
-                                </xsl:element>
+                                <xsl:apply-templates select="//t:surface[@xml:id='img36']" />
                             </div>
                             <div class="col-sm text font-monospace" style="height: 708px; overflow-y: scroll;">
                                 <xsl:apply-templates select="//t:text[@xml:id='page_36']" />
@@ -201,8 +189,8 @@
                                     <p>Testo codificato ed elaborato da</p>
                                     <p><xsl:value-of select="//t:titleStmt//t:persName[@xml:id='LN']" /> (numero di matricola 567026)</p>
                                     <p>Contatti personali: <br/>
-                                       l dot noto1 at studenti dot unipi dot it <br/>
-                                       luigi dot noto1995 at gmail dot com    
+                                       l.noto1@studenti.unipi.it <br/>
+                                       luigi.noto1995@gmail.com    
                                     </p>
                                 </div>
                                 <div class="col-md text-center" id="info-centrale" style="padding: 10px">
@@ -229,9 +217,9 @@
     </xsl:template>
     <!-- Templates -->
         <!-- Template per divisione delle righe come nel manoscritto -->
-            <xsl:template match="//t:lb">
+            <xsl:template match="t:lb">
                 <xsl:for-each select="current()">
-                    <xsl:value-of select="//t:lb" /><br />
+                    <br />
                 </xsl:for-each>
             </xsl:template>
 
@@ -414,11 +402,37 @@
         <!-- Template Floating Text -->
             <xsl:template match="t:floatingText">
                 <xsl:element name="span">
-                    <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                    <xsl:attribute name="id"><xsl:value-of select="//t:floatingText/@xml:id" /></xsl:attribute>
                     <xsl:attribute name="style"></xsl:attribute>
                     <xsl:value-of select="current()" />
                 </xsl:element>
             </xsl:template>
+
+        <!-- Template immagini -->
+            <xsl:template match="t:surface">
+                <xsl:element name="img">
+                    <xsl:attribute name="src"><xsl:value-of select="current()[@xml:id]//t:graphic/@url"/></xsl:attribute>
+                    <xsl:attribute name="usemap">#<xsl:value-of select="current()/@xml:id" /></xsl:attribute>
+                </xsl:element>
+                <xsl:element name="map">
+                    <xsl:attribute name="id"><xsl:value-of select="current()/@xml:id" /></xsl:attribute>
+                    <xsl:apply-templates select="./t:zone" />
+                </xsl:element>
+            </xsl:template>
+
+        <!-- Template zone immagini -->
+            <xsl:template match="t:zone">
+                <xsl:for-each select="current()">
+                    <xsl:element name="area">
+                        <xsl:attribute name="coords"><xsl:value-of select="current()/@ulx" />,<xsl:value-of select="current()/@uly" />,<xsl:value-of select="current()/@lrx" />,<xsl:value-of select="current()/@lry" /></xsl:attribute>
+                        <xsl:attribute name="style">cursor: help</xsl:attribute>
+                        <xsl:attribute name="title"><xsl:value-of select="current()/@corresp" /></xsl:attribute>
+                        <xsl:attribute name="shape">rect</xsl:attribute>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:template>
+
+
 
 </xsl:stylesheet>
 
