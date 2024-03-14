@@ -1,26 +1,31 @@
 $(document).ready(function(){
     $(".navbar-toggler").click(function(){
-        if($(this).attr("aria-expanded")=='false'){
+        var ariaExpanded = $(this).attr("aria-expanded");
+        if(ariaExpanded === 'false'){
             $(this).attr("aria-expanded","true");
             $("#navbarNavDropdown").show();
         } else {
             $(this).attr("aria-expanded","false");
             $("#navbarNavDropdown").hide();
         }
-    })
+    });
+    
     $("#navbarDropdownMenuLink").click(function(){
-        if($(this).attr("aria-expanded")=='false'){
+        var ariaExpanded = $(this).attr("aria-expanded");
+        if(ariaExpanded === 'false'){
             $(this).attr("aria-expanded","true");
             $(".dropdown-menu").show();
-            $(".dropdown-item").click(function(){
-                $("#navbarDropdownMenuLink").attr("aria-expanded","false");
-                $(".dropdown-menu").hide();
-            })
         } else {
             $(this).attr("aria-expanded","false");
             $(".dropdown-menu").hide();
         }
-    })
+    });
+    
+    $(".dropdown-item").click(function(){
+        $("#navbarDropdownMenuLink").attr("aria-expanded","false");
+        $(".dropdown-menu").hide();
+    });
+
     $(".btn-outline-dark").click(function(){
         switch($(this).attr("id")){
             case("pg34D"):{
@@ -160,4 +165,26 @@ $(document).ready(function(){
             }
         }
     })
+
+    $("area").hover(
+        function() {
+          var idArea = $(this).attr("title").replace("#", "");
+          $(".zone").each(function() {
+            if (idArea === this.id) {
+              $(this).data("prevFontWeight", $(this).attr("style"));
+              $(this).css("font-weight", "bold");
+              return false;
+            }
+          });
+        },
+        function() {
+          var idArea = $(this).attr("title").replace("#", "");
+          $(".zone").each(function() {
+            if (idArea === this.id) {
+              $(this).css("font-weight", $(this).data("prevFontWeight"));
+              return false;
+            }
+          });
+        }
+      );
 })

@@ -218,9 +218,7 @@
     <!-- Templates -->
         <!-- Template per divisione delle righe come nel manoscritto -->
             <xsl:template match="t:lb">
-                <xsl:for-each select="current()">
-                    <br />
-                </xsl:for-each>
+                <br />
             </xsl:template>
 
         <!-- Template per delete -->
@@ -239,6 +237,7 @@
             <xsl:template match="t:hi">
                 <xsl:element name="span">
                     <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
+                    <xsl:attribute name="class">zone</xsl:attribute>
                     <xsl:attribute name="style"></xsl:attribute>
                     <xsl:value-of select="current()"/>
                 </xsl:element>
@@ -248,7 +247,7 @@
             <xsl:template match="t:unclear">
                 <xsl:for-each select="current()">
                     <xsl:element name="span">
-                        <xsl:attribute name="class">unclear</xsl:attribute>
+                        <xsl:attribute name="class">unclear zone</xsl:attribute>
                         <xsl:attribute name="id"><xsl:value-of select="[@xml:id]"/></xsl:attribute>
                         <xsl:attribute name="style"></xsl:attribute>
                         <xsl:value-of select="current()" />
@@ -261,7 +260,7 @@
                 <xsl:choose>
                     <xsl:when test="@place='above'">
                         <xsl:element name="span">
-                            <xsl:attribute name="class">add above</xsl:attribute>
+                            <xsl:attribute name="class">add above zone</xsl:attribute>
                             <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
                             <xsl:value-of select="current()" />
@@ -269,7 +268,7 @@
                     </xsl:when>
                     <xsl:when test="@place='between'">
                         <xsl:element name="span">
-                            <xsl:attribute name="class">add between</xsl:attribute>
+                            <xsl:attribute name="class">add between zone</xsl:attribute>
                             <xsl:attribute name="style">display: inline-block</xsl:attribute>
                             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
                             <xsl:value-of select="current()" />
@@ -283,7 +282,7 @@
                 <xsl:for-each select="current()">    
                     <xsl:if test="t:del">
                         <xsl:element name="span">
-                            <xsl:attribute name="class">substA</xsl:attribute>
+                            <xsl:attribute name="class">substA zone</xsl:attribute>
                             <xsl:attribute name="style">display: inline-block</xsl:attribute>
                             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
                             <xsl:value-of select="t:add" />
@@ -302,7 +301,7 @@
                 <xsl:for-each select="current()">
                     <xsl:if test="t:abbr">
                         <xsl:element name="span">
-                            <xsl:attribute name="class">expansion</xsl:attribute>
+                            <xsl:attribute name="class">expansion zone</xsl:attribute>
                             <xsl:attribute name="style">display: inline-block</xsl:attribute>
                             <xsl:attribute name="id"><xsl:value-of select="current()[@xml:id]" /></xsl:attribute>
                             <xsl:value-of select="t:expan" />
@@ -315,7 +314,7 @@
                     </xsl:if>
                     <xsl:if test="t:sic">
                         <xsl:element name="span">
-                            <xsl:attribute name="class">correction</xsl:attribute>
+                            <xsl:attribute name="class">correction zone</xsl:attribute>
                             <xsl:attribute name="style">display: inline-block</xsl:attribute>
                             <xsl:attribute name="id"><xsl:value-of select="[@xml:id]" /></xsl:attribute>
                             <xsl:value-of select="t:corr" />
@@ -391,7 +390,7 @@
             <xsl:template match="t:gap">
                 <xsl:for-each select="current()">
                     <xsl:element name="span">
-                        <xsl:attribute name="class">gap</xsl:attribute>
+                        <xsl:attribute name="class">gap zone</xsl:attribute>
                         <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
                         <xsl:attribute name="style">display: none; color: red</xsl:attribute>
                         ***
@@ -402,9 +401,11 @@
         <!-- Template Floating Text -->
             <xsl:template match="t:floatingText">
                 <xsl:element name="span">
-                    <xsl:attribute name="id"><xsl:value-of select="//t:floatingText/@xml:id" /></xsl:attribute>
+                    <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+                    <xsl:attribute name="class">zone</xsl:attribute>
                     <xsl:attribute name="style"></xsl:attribute>
-                    <xsl:value-of select="current()" />
+                    <!--<xsl:value-of select="current()" />-->
+                    <xsl:apply-templates />
                 </xsl:element>
             </xsl:template>
 
